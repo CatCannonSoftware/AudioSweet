@@ -14,14 +14,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    blank = [NSImage imageNamed:@"blank.png"];
-    whole = [NSImage imageNamed:@"whole.png"];
-    half = [NSImage imageNamed:@"half.png"];
-    quarter = [NSImage imageNamed:@"quarter.psd"];
-    eighth = [NSImage imageNamed:@"eighth.png"];
-    sixteenth = [NSImage imageNamed:@"sixteenth.png"];
-    thirtySecond = [NSImage imageNamed:@"thirtySecond_.png"];
-    sixtyFourth = [NSImage imageNamed:@"sixtyFourth.png"];
+
 }
 
 -(void)tempoMath {

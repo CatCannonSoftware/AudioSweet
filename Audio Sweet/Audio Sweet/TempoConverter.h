@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TempoConverter : NSObject
-@property (weak) IBOutlet NSTextField *textFieldTempo;
-@property (weak) IBOutlet NSTextField *textFieldNewTempo;
-@property (weak) IBOutlet NSTextField *textFieldTimeStretch;
-@property (weak) IBOutlet NSTextField *textFieldSemiTones;
+@interface TempoConverter : NSObject {
+    IBOutlet NSTextField *textFieldTempo;
+    IBOutlet NSTextField *textFieldNewTempo;
+    IBOutlet NSTextField *textFieldTimeStretch;
+    IBOutlet NSTextField *textFieldSemiTones;
+}
+
 @property (nonatomic) float semiToneValue;
 @property (nonatomic) float timeStretchValue;
 

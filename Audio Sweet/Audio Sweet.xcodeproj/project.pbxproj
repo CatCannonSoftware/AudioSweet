@@ -9,15 +9,8 @@
 /* Begin PBXBuildFile section */
 		4104A51E1884BAE800097804 /* TempoConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4104A51D1884BAE800097804 /* TempoConverter.m */; };
 		41291BEB1885077D00200F23 /* audioSweetIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41291BEA1885077D00200F23 /* audioSweetIcon.png */; };
-		4155534A188263390092C060 /* whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 41555349188263390092C060 /* whole.png */; };
 		41555354188263470092C060 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534B188263470092C060 /* blank.png */; };
 		41555356188263470092C060 /* drDelayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534D188263470092C060 /* drDelayIcon.png */; };
-		41555357188263470092C060 /* eighth.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534E188263470092C060 /* eighth.png */; };
-		41555358188263470092C060 /* half.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534F188263470092C060 /* half.png */; };
-		41555359188263470092C060 /* quarter.psd in Resources */ = {isa = PBXBuildFile; fileRef = 41555350188263470092C060 /* quarter.psd */; };
-		4155535A188263470092C060 /* sixteenth.png in Resources */ = {isa = PBXBuildFile; fileRef = 41555351188263470092C060 /* sixteenth.png */; };
-		4155535B188263470092C060 /* sixtyFourth.png in Resources */ = {isa = PBXBuildFile; fileRef = 41555352188263470092C060 /* sixtyFourth.png */; };
-		4155535C188263470092C060 /* thirtySecond_.png in Resources */ = {isa = PBXBuildFile; fileRef = 41555353188263470092C060 /* thirtySecond_.png */; };
 		4155535F188273EA0092C060 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4155535E188273EA0092C060 /* StoreKit.framework */; };
 		41DC86351890AAAF005A064C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DC86331890AAAF005A064C /* MainMenu.xib */; };
 		41E7DD90188257B20044AFC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E7DD8F188257B20044AFC0 /* Cocoa.framework */; };
@@ -48,15 +41,8 @@
 		4104A51C1884BAE800097804 /* TempoConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoConverter.h; sourceTree = "<group>"; };
 		4104A51D1884BAE800097804 /* TempoConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoConverter.m; sourceTree = "<group>"; };
 		41291BEA1885077D00200F23 /* audioSweetIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audioSweetIcon.png; sourceTree = "<group>"; };
-		41555349188263390092C060 /* whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whole.png; sourceTree = "<group>"; };
 		4155534B188263470092C060 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		4155534D188263470092C060 /* drDelayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drDelayIcon.png; sourceTree = "<group>"; };
-		4155534E188263470092C060 /* eighth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eighth.png; sourceTree = "<group>"; };
-		4155534F188263470092C060 /* half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = half.png; sourceTree = "<group>"; };
-		41555350188263470092C060 /* quarter.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = quarter.psd; sourceTree = "<group>"; };
-		41555351188263470092C060 /* sixteenth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sixteenth.png; sourceTree = "<group>"; };
-		41555352188263470092C060 /* sixtyFourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sixtyFourth.png; sourceTree = "<group>"; };
-		41555353188263470092C060 /* thirtySecond_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thirtySecond_.png; sourceTree = "<group>"; };
 		4155535D188267B50092C060 /* Audio Sweet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Audio Sweet.entitlements"; sourceTree = "<group>"; };
 		4155535E188273EA0092C060 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		41DC86341890AAAF005A064C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -171,13 +157,6 @@
 				41291BEA1885077D00200F23 /* audioSweetIcon.png */,
 				4155534B188263470092C060 /* blank.png */,
 				4155534D188263470092C060 /* drDelayIcon.png */,
-				4155534E188263470092C060 /* eighth.png */,
-				4155534F188263470092C060 /* half.png */,
-				41555350188263470092C060 /* quarter.psd */,
-				41555351188263470092C060 /* sixteenth.png */,
-				41555352188263470092C060 /* sixtyFourth.png */,
-				41555353188263470092C060 /* thirtySecond_.png */,
-				41555349188263390092C060 /* whole.png */,
 				41E7DD97188257B20044AFC0 /* Audio Sweet-Info.plist */,
 				41E7DD98188257B20044AFC0 /* InfoPlist.strings */,
 				41E7DD9B188257B20044AFC0 /* main.m */,
@@ -292,18 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4155535B188263470092C060 /* sixtyFourth.png in Resources */,
-				4155535A188263470092C060 /* sixteenth.png in Resources */,
 				41291BEB1885077D00200F23 /* audioSweetIcon.png in Resources */,
 				41555356188263470092C060 /* drDelayIcon.png in Resources */,
-				41555357188263470092C060 /* eighth.png in Resources */,
 				41DC86351890AAAF005A064C /* MainMenu.xib in Resources */,
-				41555359188263470092C060 /* quarter.psd in Resources */,
-				4155534A188263390092C060 /* whole.png in Resources */,
-				4155535C188263470092C060 /* thirtySecond_.png in Resources */,
 				41E7DD9A188257B20044AFC0 /* InfoPlist.strings in Resources */,
 				41555354188263470092C060 /* blank.png in Resources */,
-				41555358188263470092C060 /* half.png in Resources */,
 				41E7DDA8188257B30044AFC0 /* Images.xcassets in Resources */,
 				41E7DDA0188257B20044AFC0 /* Credits.rtf in Resources */,
 			);
@@ -460,14 +432,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Audio Sweet/Audio Sweet.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jeffrey Brice (T5VJ6ZM7GN)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application: Jeffrey Brice (T5VJ6ZM7GN)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Jeffrey Brice (5PF42LR3V9)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Audio Sweet/Audio Sweet-Prefix.pch";
 				INFOPLIST_FILE = "Audio Sweet/Audio Sweet-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F6F63144-0BC2-44BC-B3E1-46C2EA645B29";
+				PROVISIONING_PROFILE = "60981DA9-7387-4886-B512-96A8EA3202C5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -478,15 +450,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Audio Sweet/Audio Sweet.entitlements";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Jeffrey Brice (T5VJ6ZM7GN)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application: Jeffrey Brice (T5VJ6ZM7GN)";
-				"CODE_SIGN_IDENTITY[sdk=macosx10.9]" = "3rd Party Mac Developer Application: Jeffrey Brice (T5VJ6ZM7GN)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Jeffrey Brice (5PF42LR3V9)";
+				"CODE_SIGN_IDENTITY[sdk=macosx10.9]" = "Mac Developer: Jeffrey Brice (5PF42LR3V9)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Audio Sweet/Audio Sweet-Prefix.pch";
 				INFOPLIST_FILE = "Audio Sweet/Audio Sweet-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F6F63144-0BC2-44BC-B3E1-46C2EA645B29";
+				PROVISIONING_PROFILE = "60981DA9-7387-4886-B512-96A8EA3202C5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,172 +7,168 @@
 //
 
 #import "FrequencyConverter.h"
-#include "math.h"
+#import "math.h"
 
 
 @implementation FrequencyConverter
-@synthesize frequency, period, midiNumber, tuningStandard;
+
+@synthesize frequency, period, midiNumber, tuningStandard, intNote;
 
 -(void)midiNumberMath {
-    midiNumber = 69;
-    int intNote = 0;
-    switch (_btnDropdownOctave.selectedTag) {
+ //  midiNumber = 69;
+    intNote = 0.0;
+    switch (btnDropdownOctave.selectedTag) {
+        case 0:
+            break;
         case 1:
-            intNote = intNote - 72;
+            intNote = intNote - 72.0;
             break;
         case 2:
-            intNote = intNote - 60;
+            intNote = intNote - 60.0;
             break;
         case 3:
-            intNote = intNote - 48;
+            intNote = intNote - 48.0;
             break;
         case 4:
-            intNote = intNote - 36;
+            intNote = intNote - 36.0;
             break;
         case 5:
-            intNote = intNote - 24;
+            intNote = intNote - 24.0;
             break;
         case 6:
-            intNote = intNote - 12;
+            intNote = intNote - 12.0;
             break;
         case 7:
-            intNote = intNote;
+          //  intNote = intNote;
             break;
         case 8:
-            intNote = intNote + 12;
+            intNote = intNote + 12.0;
             break;
         case 9:
-            intNote = intNote + 24;
+            intNote = intNote + 24.0;
             break;
         case 10:
-            intNote = intNote + 36;
+            intNote = intNote + 36.0;
             break;
         case 11:
-            intNote = intNote + 48;
+            intNote = intNote + 48.0;
             break;
         default:
-            intNote = intNote;
             break;
     }
-    switch (_btnDropdownAccidental.selectedTag) {
+    switch (btnDropdownAccidental.selectedTag) {
         case 1:
-            intNote = intNote + 1;
+            intNote = intNote + 1.0;
             break;
         case 2:
-            intNote = intNote - 1;
+            intNote = intNote - 1.0;
             break;
         case 3:
-            intNote = intNote;
             break;
         default:
-            intNote = intNote;
             break;
     }
-    switch (_btnDropdownNote.selectedTag) {
+    switch (btnDropdownNote.selectedTag) {
         case 1:
-            intNote = intNote;
             break;
         case 2:
-            intNote = intNote + 2;
+            intNote = intNote + 2.0;
             break;
         case 3:
-            intNote = intNote + 3;
+            intNote = intNote + 3.0;
             break;
         case 4:
-            intNote = intNote + 5;
+            intNote = intNote + 5.0;
             break;
         case 5:
-            intNote = intNote + 7;
+            intNote = intNote + 7.0;
             break;
         case 6:
-            intNote = intNote + 8;
+            intNote = intNote + 8.0;
             break;
         case 7:
-            intNote = intNote + 10;
+            intNote = intNote + 10.0;
             break;
         default:
-            intNote = intNote;
             break;
     }
-    midiNumber = 69 + intNote;
+    midiNumber = 69.0 + intNote;
 }
 
 -(void)tuningStandardMath {
-    switch (_btnDropdownTuningStandard.selectedTag) {
+    switch (btnDropdownTuningStandard.selectedTag) {
         case 1:
-            tuningStandard = 440;
+            tuningStandard = 440.0;
             break;
         case 2:
-            tuningStandard = 380;
+            tuningStandard = 380.0;
             break;
         case 3:
-            tuningStandard = 480;
+            tuningStandard = 480.0;
             break;
         case 4:
             tuningStandard = 422.5;
             break;
         case 5:
-            tuningStandard = 409;
+            tuningStandard = 409.0;
             break;
         case 6:
             tuningStandard = 423.2;
             break;
         case 7:
-            tuningStandard = 435;
+            tuningStandard = 435.0;
             break;
         case 8:
             tuningStandard = 430.54;
             break;
         case 9:
-            tuningStandard = 432;
+            tuningStandard = 432.0;
             break;
         case 10:
-            tuningStandard = 452;
+            tuningStandard = 452.0;
             break;
         case 11:
-            tuningStandard = 439;
+            tuningStandard = 439.0;
             break;
         case 12:
             tuningStandard = 435.5;
             break;
         case 13:
-            tuningStandard = 442;
+            tuningStandard = 442.0;
             break;
         case 14:
-            tuningStandard = 443;
+            tuningStandard = 443.0;
             break;
         case 15:
-            tuningStandard = 415;
+            tuningStandard = 415.0;
             break;
         case 16:
-            tuningStandard = 451;
+            tuningStandard = 451.0;
             break;
         default:
-            tuningStandard = 440;
             break;
     }
 }
 
--(void)frequencyMath {
+-(IBAction)frequencyCalculate:(NSButton *)sender {
     [self tuningStandardMath];
     [self midiNumberMath];
-    float y = ((midiNumber-69)/12);
-    frequency = pow(2, y) * (tuningStandard);
-    period = (1/frequency) * pow(10, 3);
+    float freqMid = powf(2.0, ((midiNumber - 69.0)/12.0));
+    frequency = freqMid * tuningStandard;
+    period = ((1.0/frequency) * (powf(10.0, 3.0)));
+    _formattedFrequency = [NSString stringWithFormat:@"%.02f", frequency];
     _formattedPeriod = [NSString stringWithFormat:@"%.02f", period];
-}
-
--(IBAction)frequencyCalculate:(NSButton *)sender {
-    [self frequencyMath];
-    _textFieldFrequency.floatValue = frequency;
-    _textFieldMidiNumber.intValue = midiNumber;
-    _textFieldPeriod.stringValue = _formattedPeriod;
+    _formattedMidi = [NSString stringWithFormat:@"%.00f", midiNumber];
+    
+    textFieldFrequency.stringValue = _formattedFrequency;
+    textFieldMidiNumber.stringValue = _formattedMidi;
+    textFieldPeriod.stringValue = _formattedPeriod;
 }
 
 -(IBAction)resetFields:(NSButton *)sender {
-    _textFieldFrequency.floatValue = 0;
-    _textFieldMidiNumber.intValue = 0;
-    _textFieldPeriod.stringValue = nil;
+    textFieldFrequency.stringValue = @"";
+    textFieldMidiNumber.stringValue = @"";
+    textFieldPeriod.stringValue = @"";
 }
 
 @end

@@ -179,7 +179,6 @@
                     </imageView>
                 </subviews>
             </view>
-            <contentBorderThickness minY="0.0" maxY="0.0"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -224,7 +223,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-XG-JFk">
+                    <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ib2-XG-JFk">
                         <rect key="frame" x="224" y="102" width="59" height="56"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="grayBezel" id="Je6-ay-r7k"/>
@@ -346,7 +345,6 @@
                     </textField>
                 </subviews>
             </view>
-            <contentBorderThickness minY="0.0" maxY="0.0"/>
         </window>
         <window title="Audio Sweet - Note to hz Converter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="o8x-ES-gdi">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
@@ -367,14 +365,30 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="wIs-Rb-j78">
                                 <items>
-                                    <menuItem title="Note" state="on" id="sJ3-WC-XXz"/>
-                                    <menuItem title="A" tag="1" id="RQa-fF-Xkr"/>
-                                    <menuItem title="B" tag="2" id="UaE-1V-NAu"/>
-                                    <menuItem title="C" tag="3" id="3SS-MF-bEp"/>
-                                    <menuItem title="D" tag="4" id="W6A-09-ek4"/>
-                                    <menuItem title="E" tag="5" id="ch1-Jz-fVe"/>
-                                    <menuItem title="F" tag="6" id="eQp-nc-i4C"/>
-                                    <menuItem title="G" tag="7" id="UIt-8J-Kpp"/>
+                                    <menuItem title="Note" state="on" id="sJ3-WC-XXz">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="A" tag="1" id="RQa-fF-Xkr">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="B" tag="2" id="UaE-1V-NAu">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="C" tag="3" id="3SS-MF-bEp">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="D" tag="4" id="W6A-09-ek4">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="E" tag="5" id="ch1-Jz-fVe">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="F" tag="6" id="eQp-nc-i4C">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="G" tag="7" id="UIt-8J-Kpp">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -390,17 +404,39 @@
                                     <menuItem title="Octave" state="on" id="fPl-XX-IQ9">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="-2" tag="1" id="GdN-Vt-2Sf"/>
-                                    <menuItem title="-1" tag="2" id="g8M-6o-suG"/>
-                                    <menuItem title="0" tag="3" id="NTw-wq-PMR"/>
-                                    <menuItem title="1" tag="4" id="v8K-9B-5H2"/>
-                                    <menuItem title="2" tag="5" id="roR-Sz-8XM"/>
-                                    <menuItem title="3" tag="6" id="NmN-My-vSP"/>
-                                    <menuItem title="4" tag="7" id="3l4-vi-87j"/>
-                                    <menuItem title="5" tag="8" id="0ff-sR-F0M"/>
-                                    <menuItem title="6" tag="9" id="zdN-VX-akV"/>
-                                    <menuItem title="7" tag="10" id="hRd-Xm-SZk"/>
-                                    <menuItem title="8" tag="11" id="zt6-8H-OCf"/>
+                                    <menuItem title="-2" tag="1" id="GdN-Vt-2Sf">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="-1" tag="2" id="g8M-6o-suG">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="0" tag="3" id="NTw-wq-PMR">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="1" tag="4" id="v8K-9B-5H2">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="2" tag="5" id="roR-Sz-8XM">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="3" tag="6" id="NmN-My-vSP">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="4" tag="7" id="3l4-vi-87j">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="5" tag="8" id="0ff-sR-F0M">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="6" tag="9" id="zdN-VX-akV">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="7" tag="10" id="hRd-Xm-SZk">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="8" tag="11" id="zt6-8H-OCf">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -416,9 +452,15 @@
                                     <menuItem title="Accidental" state="on" id="m5e-aX-40i">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="♯" tag="1" id="Nct-zX-dwD"/>
-                                    <menuItem title="♭" tag="2" id="VV0-oz-R4t"/>
-                                    <menuItem title="♮" tag="3" id="S6w-ls-sfh"/>
+                                    <menuItem title="♯" tag="1" id="Nct-zX-dwD">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="♭" tag="2" id="VV0-oz-R4t">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="♮" tag="3" id="S6w-ls-sfh">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -498,7 +540,7 @@
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74C-2p-DBO">
                         <rect key="frame" x="333" y="226" width="139" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="Tuning Standard" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="0nS-Aq-Ahe" id="RmZ-u3-klR">
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="RmZ-u3-klR">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="G7s-kr-J64">
@@ -506,29 +548,67 @@
                                     <menuItem title="Tuning Standard" state="on" id="0nS-Aq-Ahe">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
-                                    <menuItem title="Standard (A440)" tag="1" id="ZGw-WK-Gf6"/>
+                                    <menuItem title="Standard (A440)" tag="1" id="ZGw-WK-Gf6">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem isSeparatorItem="YES" id="IMm-Gn-Ivo"/>
-                                    <menuItem title="English 1720's (A380)" tag="2" id="UkL-HC-IhF"/>
-                                    <menuItem title="Bach Organ (A480)" tag="3" id="VnD-oO-JOk"/>
-                                    <menuItem title="Handel 1740 (A422.5)" tag="4" id="M2T-E9-7Hw"/>
-                                    <menuItem title="Handel 1780 (A409)" tag="5" id="OFZ-sE-xfx"/>
+                                    <menuItem title="English 1720's (A380)" tag="2" id="UkL-HC-IhF">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Bach Organ (A480)" tag="3" id="VnD-oO-JOk">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Handel 1740 (A422.5)" tag="4" id="M2T-E9-7Hw">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Handel 1780 (A409)" tag="5" id="OFZ-sE-xfx">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem isSeparatorItem="YES" id="T0Q-St-Oc3"/>
-                                    <menuItem title="Dresden Opera 1815 (A423.2)" tag="6" id="kyZ-aG-aS7"/>
-                                    <menuItem title="Dresden Opera 1826 (A435)" tag="7" id="LFc-am-pm2"/>
-                                    <menuItem title="La Scala Pitch Inflation (A451)" tag="16" id="nbQ-Q9-nb7"/>
-                                    <menuItem title="French Pitch 1859 (A435)" tag="7" id="m3S-fb-O0m"/>
-                                    <menuItem title="Philosophical Pitch (A430.54)" tag="8" id="GK1-n9-HR5"/>
-                                    <menuItem title="Verdi Tuning (A432)" tag="9" id="ziU-hA-c2v"/>
+                                    <menuItem title="Dresden Opera 1815 (A423.2)" tag="6" id="kyZ-aG-aS7">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Dresden Opera 1826 (A435)" tag="7" id="LFc-am-pm2">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="La Scala Pitch Inflation (A451)" tag="16" id="nbQ-Q9-nb7">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="French Pitch 1859 (A435)" tag="7" id="m3S-fb-O0m">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Philosophical Pitch (A430.54)" tag="8" id="GK1-n9-HR5">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Verdi Tuning (A432)" tag="9" id="ziU-hA-c2v">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem isSeparatorItem="YES" id="NYe-If-YcJ"/>
-                                    <menuItem title="Old Philharmonic Pitch (A452)" tag="10" id="8Dh-B8-2wY"/>
-                                    <menuItem title="New Philharmonic Pitch (A439)" tag="11" id="fN5-02-gxY"/>
-                                    <menuItem title="Diapason Normal @ 15ºC  (A439)" tag="11" id="bSI-dI-kpw"/>
-                                    <menuItem title="Diapason Normal in a Heated Hall  (A435.5)" tag="12" id="6a1-th-SLf"/>
+                                    <menuItem title="Old Philharmonic Pitch (A452)" tag="10" id="8Dh-B8-2wY">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="New Philharmonic Pitch (A439)" tag="11" id="fN5-02-gxY">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Diapason Normal @ 15ºC  (A439)" tag="11" id="bSI-dI-kpw">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Diapason Normal in a Heated Hall  (A435.5)" tag="12" id="6a1-th-SLf">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                     <menuItem isSeparatorItem="YES" id="qnJ-bi-lL0"/>
-                                    <menuItem title="Stuggart/Scheibler Pitch (A440)" tag="1" id="sS9-b2-FWR"/>
-                                    <menuItem title="US Alternative (A442)" tag="13" id="cKu-G8-K2A"/>
-                                    <menuItem title="European Alternative (A443)" tag="14" id="9U6-Rx-62D"/>
-                                    <menuItem title="Modern Baroque Reproduction (A415)" tag="15" id="akx-tK-gSi"/>
+                                    <menuItem title="Stuggart/Scheibler Pitch (A440)" tag="1" id="sS9-b2-FWR">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="US Alternative (A442)" tag="13" id="cKu-G8-K2A">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="European Alternative (A443)" tag="14" id="9U6-Rx-62D">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="Modern Baroque Reproduction (A415)" tag="15" id="akx-tK-gSi">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
@@ -557,7 +637,6 @@
                     </button>
                 </subviews>
             </view>
-            <contentBorderThickness minY="0.0" maxY="0.0"/>
         </window>
         <customObject id="6QQ-am-Kwl" customClass="FrequencyConverter">
             <connections>
@@ -691,7 +770,6 @@
                     </button>
                 </subviews>
             </view>
-            <contentBorderThickness minY="0.0" maxY="0.0"/>
         </window>
         <customObject id="eGe-pV-rFI" customClass="TempoConverter">
             <connections>

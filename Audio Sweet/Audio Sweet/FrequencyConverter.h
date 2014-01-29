@@ -8,21 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FrequencyConverter : NSObject
-@property (weak) IBOutlet NSPopUpButton *btnDropdownNote;
-@property (weak) IBOutlet NSPopUpButton *btnDropdownAccidental;
-@property (weak) IBOutlet NSPopUpButton *btnDropdownOctave;
-@property (weak) IBOutlet NSPopUpButton *btnDropdownTuningStandard;
-@property (weak) IBOutlet NSTextField *textFieldFrequency;
-@property (weak) IBOutlet NSTextField *textFieldPeriod;
-@property (weak) IBOutlet NSTextField *textFieldMidiNumber;
-@property (weak) IBOutlet NSButton *btnCalculate;
-@property (weak) IBOutlet NSButton *btnReset;
+@interface FrequencyConverter : NSObject {
+    IBOutlet NSPopUpButton *btnDropdownNote;
+    IBOutlet NSPopUpButton *btnDropdownAccidental;
+    IBOutlet NSPopUpButton *btnDropdownOctave;
+    IBOutlet NSPopUpButton *btnDropdownTuningStandard;
+    IBOutlet NSTextField *textFieldFrequency;
+    IBOutlet NSTextField *textFieldPeriod;
+    IBOutlet NSTextField *textFieldMidiNumber;
+    IBOutlet NSButton *btnCalculate;
+    IBOutlet NSButton *btnReset;
+}
 
 @property (nonatomic) float frequency;
 @property (nonatomic) float period;
-@property (nonatomic) int midiNumber;
+@property (nonatomic) float midiNumber;
+@property (nonatomic) float intNote;
 @property (nonatomic) float tuningStandard;
 @property (nonatomic) NSString* formattedPeriod;
+@property (nonatomic) NSString* formattedFrequency;
+@property (nonatomic) NSString* formattedMidi;
+
 
 @end

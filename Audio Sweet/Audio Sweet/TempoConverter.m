@@ -7,9 +7,10 @@
 //
 
 #import "TempoConverter.h"
-#include "math.h"
+#import "math.h"
 
 @implementation TempoConverter
+
 @synthesize semiToneValue, timeStretchValue;
 
 -(void)tempoMath {
@@ -17,8 +18,8 @@
     float newTempo = 0.0;
     float percentage = 0.0;
     float changeInTempo = 0.0;
-    tempo = _textFieldTempo.intValue;
-    newTempo = _textFieldNewTempo.intValue;
+    tempo = textFieldTempo.intValue;
+    newTempo = textFieldNewTempo.intValue;
     changeInTempo = newTempo / tempo;
     percentage = ((tempo/4) / (newTempo/4)) * 100;
     timeStretchValue = percentage;
@@ -30,16 +31,15 @@
     [self tempoMath];
     NSString *semiToneString = [NSString stringWithFormat:(NSString *)@"%.02f semitones", semiToneValue];
     NSString *timeStretchString = [NSString stringWithFormat:(NSString *)@"%.02f%%", timeStretchValue];
-    _textFieldSemiTones.stringValue = semiToneString;
-    _textFieldTimeStretch.stringValue = timeStretchString;
+    textFieldSemiTones.stringValue = semiToneString;
+    textFieldTimeStretch.stringValue = timeStretchString;
 }
 
 -(IBAction)resetTempo:(NSButton *)sender {
-    _textFieldNewTempo.intValue = 0;
-    _textFieldTempo.intValue = 0;
-    _textFieldSemiTones.floatValue = 0;
-    
-    _textFieldTimeStretch.floatValue = 0;
+    textFieldNewTempo.stringValue = @"";
+    textFieldTempo.stringValue = @"";
+    textFieldSemiTones.stringValue = @"";
+    textFieldTimeStretch.stringValue = @"";
 }
 
 @end
