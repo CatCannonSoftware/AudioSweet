@@ -15,7 +15,6 @@
 @synthesize frequency, period, midiNumber, tuningStandard, intNote;
 
 -(void)midiNumberMath {
- //  midiNumber = 69;
     intNote = 0.0;
     switch (btnDropdownOctave.selectedTag) {
         case 0:
@@ -146,6 +145,7 @@
             tuningStandard = 451.0;
             break;
         default:
+            tuningStandard = 440.0;
             break;
     }
 }
