@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1090" identifier="macosx"/>
+        <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
     </dependencies>
     <objects>
@@ -48,6 +48,31 @@
                             <menuItem title="Quit Audio Sweet" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Learn" id="KN6-cK-ZNj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Learn" id="55t-nD-PAU">
+                        <items>
+                            <menuItem title="Delay Calculator" id="oMc-qD-fCp">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="Ohl-QQ-2as" id="FhS-0Q-lAH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tempo Converter" id="VLt-Zf-Xoq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="SV4-Im-kjt" id="I0F-DQ-c3A"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Frequency Converter" id="l81-26-qKU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="XQO-Ld-hai" id="phO-8W-hb9"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -140,7 +165,7 @@
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-aW-lWr">
                         <rect key="frame" x="14" y="106" width="173" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Note to hz Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gVs-Kg-B7R">
+                        <buttonCell key="cell" type="push" title="Frequency Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gVs-Kg-B7R">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -545,7 +570,7 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="G7s-kr-J64">
                                 <items>
-                                    <menuItem title="Tuning Standard" state="on" id="0nS-Aq-Ahe">
+                                    <menuItem title="Tuning Standard" id="0nS-Aq-Ahe">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                     <menuItem title="Standard (A440)" tag="1" id="ZGw-WK-Gf6">
@@ -781,6 +806,84 @@
                 <outlet property="textFieldTimeStretch" destination="i7D-IA-N5T" id="y5Y-az-McM"/>
             </connections>
         </customObject>
+        <window title="Delay Calculator - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ohl-QQ-2as" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="112" width="680" height="717"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="qW9-Wx-UXj">
+                <rect key="frame" x="0.0" y="0.0" width="680" height="717"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6T-cd-AHT">
+                        <rect key="frame" x="18" y="20" width="644" height="677"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="KiT-LG-mQu">
+                            <font key="font" metaFont="system"/>
+                            <mutableString key="title">Calculating Delay values is a simple matter of Division and Multiplication.
+
+_The Calculation_
+
+All you need to do is divide one second (represented as 60,000 ms) by the tempo you are using.
+
+60,000 / tempo = (Delay in ms)
+
+This will give you the amount of time for one quarter note to pass at the specified tempo.
+
+_Note Values_
+
+For notes other than quarter notes, you take the delay value and multiply it by the appropriate value.
+
+Whole Notes - Multiply by 4
+Half notes - Multiply by 2
+Quarter notes - Multiply by 1
+Eighth notes - Multiply by .5
+Sixteenth notes - Multiply by .25
+32nd notes - Multiply by .125
+64th notes - Multiply by .0625
+
+(60,000 / tempo) * (note value) = (Delay value in ms)
+
+_Tuplets_
+
+If you want to find the delay value in triplets, five tuplets or any variation thereof, just divide your delay value by the number of partials in the tuplet. (I.E. 3 for Triplets, 5 for Five tuplets)
+
+(Delay value in ms) / (number of partials) = (Delay value for one partial)
+
+_Dotted notes_
+
+To get the length of dotted notes, you take the delay value and multiply by 1.5 times.
+
+(Delay value) * 1.5 = (Dotted Note Delay Value)
+
+This same concept can be applied to double and triple dotted notes (Multiply by 1.75 and 1.875 respectively)</mutableString>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Tempo Converter - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="SV4-Im-kjt" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="112" width="276" height="378"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="sIN-wg-j94">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </window>
+        <window title="Frequency Converter - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="XQO-Ld-hai" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="112" width="276" height="378"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="xK0-bq-Knh">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </window>
     </objects>
     <resources>
         <image name="audioSweetIcon" width="767" height="763.91998291015625"/>
