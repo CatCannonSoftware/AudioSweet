@@ -12,6 +12,7 @@
 		41555354188263470092C060 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534B188263470092C060 /* blank.png */; };
 		41555356188263470092C060 /* drDelayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534D188263470092C060 /* drDelayIcon.png */; };
 		4155535F188273EA0092C060 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4155535E188273EA0092C060 /* StoreKit.framework */; };
+		41C90E0518E8AFCF00EC49D3 /* appStore.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C90E0418E8AFCF00EC49D3 /* appStore.png */; };
 		41DC86351890AAAF005A064C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DC86331890AAAF005A064C /* MainMenu.xib */; };
 		41E7DD90188257B20044AFC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E7DD8F188257B20044AFC0 /* Cocoa.framework */; };
 		41E7DD9A188257B20044AFC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41E7DD98188257B20044AFC0 /* InfoPlist.strings */; };
@@ -45,6 +46,7 @@
 		4155534D188263470092C060 /* drDelayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drDelayIcon.png; sourceTree = "<group>"; };
 		4155535D188267B50092C060 /* Audio Sweet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Audio Sweet.entitlements"; sourceTree = "<group>"; };
 		4155535E188273EA0092C060 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		41C90E0418E8AFCF00EC49D3 /* appStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appStore.png; path = ../../../../../../Users/jbrice/Desktop/appStore.png; sourceTree = "<group>"; };
 		41DC86341890AAAF005A064C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		41E7DD8C188257B20044AFC0 /* Audio Sweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Sweet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E7DD8F188257B20044AFC0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 		41E7DD96188257B20044AFC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41C90E0418E8AFCF00EC49D3 /* appStore.png */,
 				41291BEA1885077D00200F23 /* audioSweetIcon.png */,
 				4155534B188263470092C060 /* blank.png */,
 				4155534D188263470092C060 /* drDelayIcon.png */,
@@ -276,6 +279,7 @@
 				41DC86351890AAAF005A064C /* MainMenu.xib in Resources */,
 				41E7DD9A188257B20044AFC0 /* InfoPlist.strings in Resources */,
 				41555354188263470092C060 /* blank.png in Resources */,
+				41C90E0518E8AFCF00EC49D3 /* appStore.png in Resources */,
 				41E7DDA8188257B30044AFC0 /* Images.xcassets in Resources */,
 				41E7DDA0188257B20044AFC0 /* Credits.rtf in Resources */,
 			);
