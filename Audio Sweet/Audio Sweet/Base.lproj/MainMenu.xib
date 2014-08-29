@@ -63,19 +63,19 @@
                                     <action selector="makeKeyAndOrderFront:" target="Ohl-QQ-2as" id="FhS-0Q-lAH"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Tempo Converter" hidden="YES" id="VLt-Zf-Xoq">
+                            <menuItem title="Tempo Converter" hidden="YES" enabled="NO" id="VLt-Zf-Xoq">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="makeKeyAndOrderFront:" target="SV4-Im-kjt" id="I0F-DQ-c3A"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Frequency Converter" hidden="YES" id="l81-26-qKU">
+                            <menuItem title="Frequency Converter" hidden="YES" enabled="NO" id="l81-26-qKU">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="makeKeyAndOrderFront:" target="XQO-Ld-hai" id="phO-8W-hb9"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Circle of Fifths" id="Q0e-md-MR4">
+                            <menuItem title="Circle of Fifths" hidden="YES" enabled="NO" id="Q0e-md-MR4">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="makeKeyAndOrderFront:" target="XQO-Ld-hai" id="uzg-oE-R4d"/>
@@ -131,7 +131,13 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="acg-9J-pl7"/>
-                            <menuItem title="Cirlce of Fifths" id="Bu2-5M-lMH">
+                            <menuItem title="Patch Notes" id="Yeb-fq-jo6">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="UiD-8M-Nca"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cirlce of Fifths" hidden="YES" enabled="NO" id="Bu2-5M-lMH">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="makeKeyAndOrderFront:" target="o8x-ES-gdi" id="fq3-iD-e5I"/>
@@ -147,59 +153,58 @@
                     </menu>
                 </menuItem>
                 <menuItem title="Update Notes" id="wYf-Yh-WH5">
-                    <menu key="submenu" title="Update Notes" systemMenu="window" id="aYW-zw-UpV"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="cQl-b5-Fmm"/>
+                        <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="U2n-A9-QGy"/>
                     </connections>
                 </menuItem>
             </items>
         </menu>
         <window title="Main Menu" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="862" y="414" width="201" height="420"/>
+            <rect key="contentRect" x="862" y="414" width="420" height="313"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="201" height="220"/>
             <value key="maxSize" type="size" width="201" height="220"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="201" height="420"/>
+                <rect key="frame" x="0.0" y="0.0" width="420" height="313"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wza-B7-Axt">
-                        <rect key="frame" x="29" y="372" width="143" height="32"/>
+                        <rect key="frame" x="29" y="265" width="143" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Delay Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nDM-Bq-zvM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="makeKeyAndOrderFront:" target="qOI-NC-LxJ" id="JTh-6S-afv"/>
+                            <action selector="openDelay:" target="MI4-Rq-Mqv" id="zfs-Wp-AXD"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-Yn-1Hd">
-                        <rect key="frame" x="26" y="340" width="149" height="32"/>
+                        <rect key="frame" x="26" y="233" width="149" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Tempo Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OJd-4w-SNa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="makeKeyAndOrderFront:" target="8kZ-aq-mLI" id="je6-mj-dX5"/>
+                            <action selector="openTempo:" target="MI4-Rq-Mqv" id="4Qr-8X-aSs"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-aW-lWr">
-                        <rect key="frame" x="14" y="306" width="173" height="32"/>
+                        <rect key="frame" x="14" y="199" width="173" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Frequency Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gVs-Kg-B7R">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="makeKeyAndOrderFront:" target="o8x-ES-gdi" id="vOr-UF-eZl"/>
+                            <action selector="openFreq:" target="MI4-Rq-Mqv" id="FTP-MI-qWY"/>
                         </connections>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd2-qh-1vU">
-                        <rect key="frame" x="16" y="240" width="169" height="32"/>
+                        <rect key="frame" x="16" y="133" width="169" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Audio File Converter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfP-IH-o0z">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -207,7 +212,7 @@
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-P0-gOe">
-                        <rect key="frame" x="19" y="207" width="162" height="32"/>
+                        <rect key="frame" x="19" y="100" width="162" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Super Slow Downer" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="veF-Ae-EVj">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -215,7 +220,7 @@
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-Yo-0aP">
-                        <rect key="frame" x="38" y="174" width="116" height="32"/>
+                        <rect key="frame" x="38" y="67" width="116" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Pitch Shifter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yWc-3e-ZYH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -223,12 +228,12 @@
                         </buttonCell>
                     </button>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-mN-x8W">
-                        <rect key="frame" x="50" y="179" width="92" height="92"/>
+                        <rect key="frame" x="249" y="204" width="92" height="92"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="audioSweetIcon" id="rG8-Fj-hjU"/>
                     </imageView>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-iE-u02">
-                        <rect key="frame" x="19" y="84" width="163" height="89"/>
+                        <rect key="frame" x="222" y="97" width="163" height="89"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="CqW-fI-S1X">
                             <font key="font" metaFont="system" size="10"/>
@@ -238,7 +243,7 @@
                         </textFieldCell>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUN-B2-Qgh">
-                        <rect key="frame" x="110" y="28" width="54" height="49"/>
+                        <rect key="frame" x="309" y="40" width="54" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="audioSweetIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="2ef-s6-nLR">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -249,7 +254,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgx-hi-eW8">
-                        <rect key="frame" x="26" y="28" width="78" height="34"/>
+                        <rect key="frame" x="225" y="40" width="78" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Click here to Rate" id="ATv-qp-7tS">
                             <font key="font" metaFont="system" size="8"/>
@@ -258,14 +263,34 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zq-Qq-TJR">
-                        <rect key="frame" x="14" y="273" width="173" height="32"/>
+                        <rect key="frame" x="14" y="166" width="173" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Cue Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cEb-7d-GQs">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="makeKeyAndOrderFront:" target="Odb-CG-uns" id="b7f-Kp-zNL"/>
+                            <action selector="openCue:" target="MI4-Rq-Mqv" id="ldg-si-R4l"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
+                        <rect key="frame" x="55" y="6" width="310" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3 Copyright (c) 2014 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
+                            <font key="font" metaFont="miniSystemBold"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0588715764" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-fQ-NU1">
+                        <rect key="frame" x="56" y="39" width="80" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Patch Notes" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7QZ-Pe-VIx">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="TVr-SY-Bu6"/>
                         </connections>
                     </button>
                 </subviews>
@@ -287,7 +312,6 @@
         <customObject id="420" customClass="NSFontManager"/>
         <window title="Delay Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="qOI-NC-LxJ">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="1199" y="608" width="507" height="291"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="507" height="291"/>
@@ -429,18 +453,28 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QzT-bj-ofs">
+                        <rect key="frame" x="408" y="15" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2D9-Sa-NWJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeDelay:" target="MI4-Rq-Mqv" id="ttl-eB-6jk"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
         </window>
         <window title="Frequency Converter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="o8x-ES-gdi">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="129" y="140" width="480" height="270"/>
+            <rect key="contentRect" x="129" y="140" width="499" height="270"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="480" height="270"/>
             <value key="maxSize" type="size" width="480" height="270"/>
             <view key="contentView" id="Gsu-Pe-a0Q">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="499" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jox-9x-41S">
@@ -721,6 +755,17 @@
                             <action selector="resetFields:" target="6QQ-am-Kwl" id="ZGo-fR-QBm"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKz-mW-fVa">
+                        <rect key="frame" x="404" y="19" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YXr-ZT-QzU">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeFreq:" target="MI4-Rq-Mqv" id="cRd-qf-m3Q"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
         </window>
@@ -751,17 +796,16 @@
         </customObject>
         <window title="Tempo Converter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="8kZ-aq-mLI">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="1441" y="99" width="297" height="231"/>
+            <rect key="contentRect" x="1441" y="99" width="309" height="260"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="297" height="231"/>
             <value key="maxSize" type="size" width="297" height="231"/>
             <view key="contentView" id="YvM-5s-hZY">
-                <rect key="frame" x="0.0" y="0.0" width="297" height="231"/>
+                <rect key="frame" x="0.0" y="0.0" width="309" height="260"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jyn-dK-tSO">
-                        <rect key="frame" x="40" y="189" width="102" height="17"/>
+                        <rect key="frame" x="40" y="218" width="102" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Original Tempo" id="Cxk-Y6-Phc">
                             <font key="font" metaFont="system"/>
@@ -770,7 +814,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOA-V0-6e1">
-                        <rect key="frame" x="40" y="159" width="78" height="17"/>
+                        <rect key="frame" x="40" y="188" width="78" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="New Tempo" id="W5F-ll-eLK">
                             <font key="font" metaFont="system"/>
@@ -779,7 +823,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75e-R1-IHh">
-                        <rect key="frame" x="159" y="189" width="118" height="22"/>
+                        <rect key="frame" x="159" y="218" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="t8Z-51-2jg">
                             <font key="font" metaFont="system"/>
@@ -788,7 +832,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p57-PW-ioO">
-                        <rect key="frame" x="159" y="157" width="118" height="22"/>
+                        <rect key="frame" x="159" y="186" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="J93-Ve-cFs">
                             <font key="font" metaFont="system"/>
@@ -797,7 +841,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7D-IA-N5T">
-                        <rect key="frame" x="159" y="101" width="118" height="22"/>
+                        <rect key="frame" x="159" y="130" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="%" drawsBackground="YES" id="zdz-mf-pn3">
                             <font key="font" metaFont="system"/>
@@ -806,7 +850,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4CG-lQ-tFb">
-                        <rect key="frame" x="159" y="69" width="118" height="22"/>
+                        <rect key="frame" x="159" y="98" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Semi Tones" drawsBackground="YES" id="itg-ki-wWl">
                             <font key="font" metaFont="system"/>
@@ -815,7 +859,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJZ-dj-Jyh">
-                        <rect key="frame" x="42" y="103" width="103" height="17"/>
+                        <rect key="frame" x="42" y="132" width="103" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time Stretching" id="zVW-sz-LmH">
                             <font key="font" metaFont="system"/>
@@ -824,7 +868,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77X-BH-0TD">
-                        <rect key="frame" x="42" y="71" width="89" height="17"/>
+                        <rect key="frame" x="42" y="100" width="89" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Transposition" id="Noo-1Q-ofS">
                             <font key="font" metaFont="system"/>
@@ -833,7 +877,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyG-3t-NFq">
-                        <rect key="frame" x="36" y="9" width="98" height="32"/>
+                        <rect key="frame" x="36" y="38" width="98" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ib1-5H-z8U">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -844,7 +888,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMo-67-33f">
-                        <rect key="frame" x="153" y="9" width="74" height="32"/>
+                        <rect key="frame" x="153" y="38" width="74" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NW6-2z-Vja">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -852,6 +896,17 @@
                         </buttonCell>
                         <connections>
                             <action selector="resetTempo:" target="eGe-pV-rFI" id="daa-Ov-vSw"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-8o-JeB">
+                        <rect key="frame" x="42" y="13" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Rh-nE-bzB">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeTempo:" target="MI4-Rq-Mqv" id="ogh-9q-4vR"/>
                         </connections>
                     </button>
                 </subviews>
@@ -869,7 +924,6 @@
         </customObject>
         <window title="Delay Calculator - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ohl-QQ-2as" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="112" width="680" height="717"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="qW9-Wx-UXj">
@@ -927,7 +981,6 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
         </window>
         <window title="Tempo Converter - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="SV4-Im-kjt" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="112" width="276" height="378"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="sIN-wg-j94">
@@ -937,7 +990,6 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
         </window>
         <window title="Frequency Converter - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="XQO-Ld-hai" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="112" width="276" height="378"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="xK0-bq-Knh">
@@ -947,17 +999,16 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
         </window>
         <window title="Cue Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Odb-CG-uns">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="1441" y="99" width="665" height="263"/>
+            <rect key="contentRect" x="1441" y="99" width="665" height="290"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="297" height="231"/>
             <value key="maxSize" type="size" width="297" height="231"/>
             <view key="contentView" id="eLQ-ht-zCX">
-                <rect key="frame" x="0.0" y="0.0" width="665" height="263"/>
+                <rect key="frame" x="0.0" y="0.0" width="665" height="290"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-xO-qHj">
-                        <rect key="frame" x="26" y="186" width="99" height="17"/>
+                        <rect key="frame" x="26" y="213" width="99" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Tempo" id="Dmp-Zf-pp7">
                             <font key="font" metaFont="system"/>
@@ -966,7 +1017,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-Kg-Neb">
-                        <rect key="frame" x="26" y="139" width="132" height="17"/>
+                        <rect key="frame" x="26" y="166" width="132" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Length (sec)" id="QJO-CN-BO1">
                             <font key="font" metaFont="system"/>
@@ -975,7 +1026,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-bg-p5i">
-                        <rect key="frame" x="215" y="184" width="118" height="22"/>
+                        <rect key="frame" x="215" y="211" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ise-BQ-Sc7">
                             <font key="font" metaFont="system"/>
@@ -984,7 +1035,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUG-J5-GaO">
-                        <rect key="frame" x="369" y="137" width="118" height="22"/>
+                        <rect key="frame" x="369" y="164" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Seconds" drawsBackground="YES" id="9Bu-9T-Ede">
                             <font key="font" metaFont="system"/>
@@ -993,7 +1044,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-d2-rCd">
-                        <rect key="frame" x="215" y="77" width="118" height="22"/>
+                        <rect key="frame" x="215" y="104" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="AGw-Oi-k1g">
                             <font key="font" metaFont="system"/>
@@ -1002,7 +1053,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Tc-e7k">
-                        <rect key="frame" x="26" y="79" width="159" height="17"/>
+                        <rect key="frame" x="26" y="106" width="159" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired number of Beats" id="b5B-8p-8Zf">
                             <font key="font" metaFont="system"/>
@@ -1011,7 +1062,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-Ut-ccB">
-                        <rect key="frame" x="209" y="16" width="133" height="32"/>
+                        <rect key="frame" x="209" y="43" width="133" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate Time" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V0A-T3-117">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1022,7 +1073,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-wy-Nq6">
-                        <rect key="frame" x="369" y="184" width="118" height="22"/>
+                        <rect key="frame" x="369" y="211" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ceg-wz-yeq">
                             <font key="font" metaFont="system"/>
@@ -1031,7 +1082,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSC-UH-dIp">
-                        <rect key="frame" x="516" y="76" width="118" height="22"/>
+                        <rect key="frame" x="516" y="103" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="aNP-I0-gHM">
                             <font key="font" metaFont="system"/>
@@ -1040,7 +1091,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-9m-dpM">
-                        <rect key="frame" x="516" y="134" width="118" height="22"/>
+                        <rect key="frame" x="516" y="161" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Seconds" drawsBackground="YES" id="cRf-yS-Ijc">
                             <font key="font" metaFont="system"/>
@@ -1049,7 +1100,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-hB-7xI">
-                        <rect key="frame" x="366" y="226" width="127" height="17"/>
+                        <rect key="frame" x="366" y="253" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Time -> Beats" id="qJq-1t-ziM">
                             <font key="font" metaFont="system"/>
@@ -1058,7 +1109,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbC-Sc-aHU">
-                        <rect key="frame" x="212" y="226" width="127" height="17"/>
+                        <rect key="frame" x="212" y="253" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Beats -> Time" id="ObP-OC-x8M">
                             <font key="font" metaFont="system"/>
@@ -1067,7 +1118,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-pb-eFZ">
-                        <rect key="frame" x="512" y="226" width="127" height="17"/>
+                        <rect key="frame" x="512" y="253" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time/Beats -> BPM" id="Hmu-Pk-Lyd">
                             <font key="font" metaFont="system"/>
@@ -1076,29 +1127,29 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-Yl-0XY">
-                        <rect key="frame" x="362" y="16" width="135" height="32"/>
+                        <rect key="frame" x="362" y="43" width="135" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate Beats" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gsa-EA-9xa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="calculateTempo:" target="eGe-pV-rFI" id="2MG-Ul-BRN"/>
+                            <action selector="calculateBeats:" target="WNf-XJ-54L" id="rnM-jk-q5P"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlk-y0-J9W">
-                        <rect key="frame" x="511" y="16" width="128" height="32"/>
+                        <rect key="frame" x="511" y="43" width="128" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate BPM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hRD-vv-6nb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="calculateTempo:" target="eGe-pV-rFI" id="bas-9p-ENQ"/>
+                            <action selector="calculateTempo:" target="WNf-XJ-54L" id="rdG-F1-g79"/>
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-u3-mqO">
-                        <rect key="frame" x="404" y="76" width="50" height="17"/>
+                        <rect key="frame" x="369" y="103" width="118" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="# Beats" drawsBackground="YES" id="p02-kJ-u9E">
                             <font key="font" metaFont="system"/>
@@ -1107,7 +1158,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f67-al-FTj">
-                        <rect key="frame" x="258" y="139" width="35" height="17"/>
+                        <rect key="frame" x="215" y="166" width="118" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time" drawsBackground="YES" id="TVN-1a-dPR">
                             <font key="font" metaFont="system"/>
@@ -1116,7 +1167,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3f0-a7-fJl">
-                        <rect key="frame" x="560" y="186" width="30" height="17"/>
+                        <rect key="frame" x="517" y="213" width="116" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="BPM" drawsBackground="YES" id="ZKY-Ob-r1T">
                             <font key="font" metaFont="system"/>
@@ -1124,6 +1175,26 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="backgroundColor" red="0.98280400815217395" green="0.49946728482177061" blue="0.4897809889775474" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-d2-Eec">
+                        <rect key="frame" x="94" y="14" width="476" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Note: Cue Calculator assumes Desired Number of Beats is in Quarter notes." id="63a-IB-z1T">
+                            <font key="font" metaFont="miniSystemBold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-SP-8vM">
+                        <rect key="frame" x="28" y="19" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i5d-yQ-njv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeCue:" target="MI4-Rq-Mqv" id="Ct9-ur-5In"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
         </window>
@@ -1133,20 +1204,188 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                 <outlet property="labelBeats" destination="Ifn-u3-mqO" id="ugu-GW-hX0"/>
                 <outlet property="labelTime" destination="f67-al-FTj" id="2pJ-EX-8Ft"/>
                 <outlet property="textFieldBPM" destination="Zkc-bg-p5i" id="2Uy-T9-V8W"/>
+                <outlet property="textFieldBPM2" destination="r9f-wy-Nq6" id="rsz-d1-Ylk"/>
                 <outlet property="textFieldBeats" destination="YGU-d2-rCd" id="vLS-jx-O00"/>
+                <outlet property="textFieldBeats2" destination="lSC-UH-dIp" id="L28-XT-Q0h"/>
                 <outlet property="textFieldTime" destination="lUG-J5-GaO" id="DKu-Gz-80i"/>
+                <outlet property="textFieldTime2" destination="VJ5-9m-dpM" id="1bh-xg-7YF"/>
             </connections>
         </customObject>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="CVM-ow-jov">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="-1448" y="339" width="480" height="270"/>
+        <window title="Patch Notes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="CVM-ow-jov">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="-480" y="294" width="480" height="266"/>
             <rect key="screenRect" x="-1600" y="180" width="1600" height="878"/>
             <view key="contentView" id="tSO-D9-AaW">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="266"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-YY-ZGb">
+                        <rect key="frame" x="-1" y="-1" width="482" height="268"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <clipView key="contentView" id="Tc5-l7-1gU">
+                            <rect key="frame" x="1" y="1" width="465" height="266"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="iav-Zx-y8o">
+                                    <rect key="frame" x="0.0" y="0.0" width="465" height="402"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="465" height="266"/>
+                                    <size key="maxSize" width="465" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment>
+                                            <string key="content">v1.3
+
+-Added “Cue Calculator”. A feature designed to help film composers determine cue lengths to fit to visual media.
+-Added a Patch Notes window.
+-Made a note of the current version on the main menu.
+-Resized and reformatted the main menu window.
+-Added methods to close the main menu when a calculator is open and reopen the main menu from within a utility.
+-Code optimization.
+
+v1.2
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="36"/>
+                                                        <textTab alignment="left" location="72"/>
+                                                        <textTab alignment="left" location="108"/>
+                                                        <textTab alignment="left" location="144"/>
+                                                        <textTab alignment="left" location="180"/>
+                                                        <textTab alignment="left" location="216"/>
+                                                        <textTab alignment="left" location="252"/>
+                                                        <textTab alignment="left" location="288"/>
+                                                        <textTab alignment="left" location="324"/>
+                                                        <textTab alignment="left" location="360"/>
+                                                        <textTab alignment="left" location="396"/>
+                                                        <textTab alignment="left" location="432"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">-Added a "Learn" menu item that shows the user how the various calculations are made.
+-Added a button to link to the app store.
+-Code optimizations
+-Cleaned up the App Icon
+</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+v1.1
+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="36"/>
+                                                        <textTab alignment="left" location="72"/>
+                                                        <textTab alignment="left" location="108"/>
+                                                        <textTab alignment="left" location="144"/>
+                                                        <textTab alignment="left" location="180"/>
+                                                        <textTab alignment="left" location="216"/>
+                                                        <textTab alignment="left" location="252"/>
+                                                        <textTab alignment="left" location="288"/>
+                                                        <textTab alignment="left" location="324"/>
+                                                        <textTab alignment="left" location="360"/>
+                                                        <textTab alignment="left" location="396"/>
+                                                        <textTab alignment="left" location="432"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">-Fixed a bug relating to the "Note to hz converter" not calculating the proper frequency and period values.
+-Now compatible with Mac OS 10.8+
+</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+v1.0
+
+-App Launched! Thank you for using Audio Sweet.</string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="36"/>
+                                                        <textTab alignment="left" location="72"/>
+                                                        <textTab alignment="left" location="108"/>
+                                                        <textTab alignment="left" location="144"/>
+                                                        <textTab alignment="left" location="180"/>
+                                                        <textTab alignment="left" location="216"/>
+                                                        <textTab alignment="left" location="252"/>
+                                                        <textTab alignment="left" location="288"/>
+                                                        <textTab alignment="left" location="324"/>
+                                                        <textTab alignment="left" location="360"/>
+                                                        <textTab alignment="left" location="396"/>
+                                                        <textTab alignment="left" location="432"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="465" height="266"/>
+                                    <size key="maxSize" width="465" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="K7r-o4-CRL">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="2hA-P2-JnE">
+                            <rect key="frame" x="466" y="1" width="15" height="266"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u2j-YY-ZGb" firstAttribute="top" secondItem="tSO-D9-AaW" secondAttribute="top" constant="-1" id="1Un-8a-SGb"/>
+                    <constraint firstAttribute="trailing" secondItem="u2j-YY-ZGb" secondAttribute="trailing" constant="-1" id="aYf-6x-VQE"/>
+                    <constraint firstItem="u2j-YY-ZGb" firstAttribute="leading" secondItem="tSO-D9-AaW" secondAttribute="leading" constant="-1" id="aZq-sG-jRV"/>
+                    <constraint firstAttribute="bottom" secondItem="u2j-YY-ZGb" secondAttribute="bottom" constant="-1" id="qpd-YD-o7K"/>
+                </constraints>
             </view>
         </window>
+        <customObject id="MI4-Rq-Mqv" customClass="WindowHandler">
+            <connections>
+                <outlet property="cueWindow" destination="Odb-CG-uns" id="wEj-uS-aBw"/>
+                <outlet property="delayWindow" destination="qOI-NC-LxJ" id="g0d-hK-ND8"/>
+                <outlet property="freqWindow" destination="o8x-ES-gdi" id="tLa-Q8-h8S"/>
+                <outlet property="mainWindow" destination="371" id="Q8A-kG-mc5"/>
+                <outlet property="tempoWindow" destination="8kZ-aq-mLI" id="H8Q-N5-oQY"/>
+            </connections>
+        </customObject>
     </objects>
     <resources>
         <image name="audioSweetIcon" width="767" height="763.91998291015625"/>
