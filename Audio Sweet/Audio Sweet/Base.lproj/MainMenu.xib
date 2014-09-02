@@ -999,16 +999,16 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
         </window>
         <window title="Cue Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Odb-CG-uns">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="1441" y="99" width="665" height="290"/>
+            <rect key="contentRect" x="1441" y="99" width="665" height="313"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="297" height="231"/>
             <value key="maxSize" type="size" width="297" height="231"/>
             <view key="contentView" id="eLQ-ht-zCX">
-                <rect key="frame" x="0.0" y="0.0" width="665" height="290"/>
+                <rect key="frame" x="0.0" y="0.0" width="665" height="313"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-xO-qHj">
-                        <rect key="frame" x="26" y="213" width="99" height="17"/>
+                        <rect key="frame" x="26" y="236" width="99" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Tempo" id="Dmp-Zf-pp7">
                             <font key="font" metaFont="system"/>
@@ -1017,7 +1017,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-Kg-Neb">
-                        <rect key="frame" x="26" y="166" width="132" height="17"/>
+                        <rect key="frame" x="26" y="189" width="132" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Length (sec)" id="QJO-CN-BO1">
                             <font key="font" metaFont="system"/>
@@ -1026,7 +1026,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-bg-p5i">
-                        <rect key="frame" x="215" y="211" width="118" height="22"/>
+                        <rect key="frame" x="215" y="234" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ise-BQ-Sc7">
                             <font key="font" metaFont="system"/>
@@ -1035,16 +1035,16 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUG-J5-GaO">
-                        <rect key="frame" x="369" y="164" width="118" height="22"/>
+                        <rect key="frame" x="369" y="187" width="32" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Seconds" drawsBackground="YES" id="9Bu-9T-Ede">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Sec" drawsBackground="YES" id="9Bu-9T-Ede">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-d2-rCd">
-                        <rect key="frame" x="215" y="104" width="118" height="22"/>
+                        <rect key="frame" x="215" y="127" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="AGw-Oi-k1g">
                             <font key="font" metaFont="system"/>
@@ -1053,7 +1053,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Tc-e7k">
-                        <rect key="frame" x="26" y="106" width="159" height="17"/>
+                        <rect key="frame" x="26" y="129" width="159" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired number of Beats" id="b5B-8p-8Zf">
                             <font key="font" metaFont="system"/>
@@ -1062,7 +1062,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-Ut-ccB">
-                        <rect key="frame" x="209" y="43" width="133" height="32"/>
+                        <rect key="frame" x="209" y="66" width="133" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate Time" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V0A-T3-117">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1073,7 +1073,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-wy-Nq6">
-                        <rect key="frame" x="369" y="211" width="118" height="22"/>
+                        <rect key="frame" x="369" y="234" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ceg-wz-yeq">
                             <font key="font" metaFont="system"/>
@@ -1082,7 +1082,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSC-UH-dIp">
-                        <rect key="frame" x="516" y="103" width="118" height="22"/>
+                        <rect key="frame" x="516" y="126" width="118" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="aNP-I0-gHM">
                             <font key="font" metaFont="system"/>
@@ -1090,17 +1090,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-9m-dpM">
-                        <rect key="frame" x="516" y="161" width="118" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Seconds" drawsBackground="YES" id="cRf-yS-Ijc">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-hB-7xI">
-                        <rect key="frame" x="366" y="253" width="127" height="17"/>
+                        <rect key="frame" x="366" y="276" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Time -> Beats" id="qJq-1t-ziM">
                             <font key="font" metaFont="system"/>
@@ -1109,7 +1100,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbC-Sc-aHU">
-                        <rect key="frame" x="212" y="253" width="127" height="17"/>
+                        <rect key="frame" x="212" y="276" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Beats -> Time" id="ObP-OC-x8M">
                             <font key="font" metaFont="system"/>
@@ -1118,7 +1109,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-pb-eFZ">
-                        <rect key="frame" x="512" y="253" width="127" height="17"/>
+                        <rect key="frame" x="512" y="276" width="127" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time/Beats -> BPM" id="Hmu-Pk-Lyd">
                             <font key="font" metaFont="system"/>
@@ -1127,7 +1118,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-Yl-0XY">
-                        <rect key="frame" x="362" y="43" width="135" height="32"/>
+                        <rect key="frame" x="362" y="66" width="135" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate Beats" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gsa-EA-9xa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1138,7 +1129,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlk-y0-J9W">
-                        <rect key="frame" x="511" y="43" width="128" height="32"/>
+                        <rect key="frame" x="511" y="66" width="128" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate BPM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hRD-vv-6nb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1149,7 +1140,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-u3-mqO">
-                        <rect key="frame" x="369" y="103" width="118" height="17"/>
+                        <rect key="frame" x="369" y="126" width="118" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="# Beats" drawsBackground="YES" id="p02-kJ-u9E">
                             <font key="font" metaFont="system"/>
@@ -1158,7 +1149,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f67-al-FTj">
-                        <rect key="frame" x="215" y="166" width="118" height="17"/>
+                        <rect key="frame" x="215" y="189" width="118" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time" drawsBackground="YES" id="TVN-1a-dPR">
                             <font key="font" metaFont="system"/>
@@ -1167,7 +1158,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3f0-a7-fJl">
-                        <rect key="frame" x="517" y="213" width="116" height="17"/>
+                        <rect key="frame" x="517" y="236" width="116" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="BPM" drawsBackground="YES" id="ZKY-Ob-r1T">
                             <font key="font" metaFont="system"/>
@@ -1175,17 +1166,17 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="backgroundColor" red="0.98280400815217395" green="0.49946728482177061" blue="0.4897809889775474" alpha="1" colorSpace="calibratedRGB"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-d2-Eec">
-                        <rect key="frame" x="94" y="14" width="476" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-d2-Eec">
+                        <rect key="frame" x="213" y="30" width="424" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Note: Cue Calculator assumes Desired Number of Beats is in Quarter notes." id="63a-IB-z1T">
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Note: Cue Calculator assumes Desired Number of Beats is in Quarter notes and that your project Frames Per Second is 24. " id="63a-IB-z1T">
                             <font key="font" metaFont="miniSystemBold"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-SP-8vM">
-                        <rect key="frame" x="28" y="19" width="75" height="23"/>
+                        <rect key="frame" x="28" y="42" width="75" height="23"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i5d-yQ-njv">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1195,6 +1186,51 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <action selector="closeCue:" target="MI4-Rq-Mqv" id="Ct9-ur-5In"/>
                         </connections>
                     </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1z-wC-GAc">
+                        <rect key="frame" x="412" y="187" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="gNd-vm-au7">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSH-0k-i4f">
+                        <rect key="frame" x="455" y="187" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="gsc-nd-hK0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sG-9U-QCE">
+                        <rect key="frame" x="517" y="187" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Sec" drawsBackground="YES" id="uyT-mg-IIc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLg-eP-bFj">
+                        <rect key="frame" x="560" y="187" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="lVb-jx-JcW">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-Vo-kYJ">
+                        <rect key="frame" x="603" y="187" width="32" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="DaT-lE-cop">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
         </window>
@@ -1207,8 +1243,12 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                 <outlet property="textFieldBPM2" destination="r9f-wy-Nq6" id="rsz-d1-Ylk"/>
                 <outlet property="textFieldBeats" destination="YGU-d2-rCd" id="vLS-jx-O00"/>
                 <outlet property="textFieldBeats2" destination="lSC-UH-dIp" id="L28-XT-Q0h"/>
+                <outlet property="textFieldFrames" destination="V1z-wC-GAc" id="eoQ-jL-WjU"/>
+                <outlet property="textFieldFrames2" destination="uLg-eP-bFj" id="zva-x7-gqQ"/>
                 <outlet property="textFieldTime" destination="lUG-J5-GaO" id="DKu-Gz-80i"/>
-                <outlet property="textFieldTime2" destination="VJ5-9m-dpM" id="1bh-xg-7YF"/>
+                <outlet property="textFieldTime2" destination="6sG-9U-QCE" id="O37-zQ-Q3J"/>
+                <outlet property="texttFieldQuarterFrames" destination="QSH-0k-i4f" id="pJ0-rw-SY1"/>
+                <outlet property="texttFieldQuarterFrames2" destination="Pbw-Vo-kYJ" id="rdF-18-vtv"/>
             </connections>
         </customObject>
         <window title="Patch Notes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="CVM-ow-jov">
@@ -1228,15 +1268,19 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="iav-Zx-y8o">
-                                    <rect key="frame" x="0.0" y="0.0" width="465" height="402"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="465" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="465" height="266"/>
-                                    <size key="maxSize" width="465" height="10000000"/>
+                                    <size key="maxSize" width="482" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment>
-                                            <string key="content">v1.3
+                                            <mutableString key="content">v1.3.1
+
+-Fixed some incorrect and inconsistent math logic in the Cue Calculator.
+-Updated the Cue Calculator to accept input and show time values as Seconds, Frames and Quarter frames. (Cue Calculator assumes Quarter notes are the desired beat value and assumes a 24fps frame rate)
+
+v1.3
 
 -Added “Cue Calculator”. A feature designed to help film composers determine cue lengths to fit to visual media.
 -Added a Patch Notes window.
@@ -1247,10 +1291,9 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
 
 v1.2
 
-</string>
+</mutableString>
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <font key="NSFont" size="11" name="LucidaGrande"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1276,9 +1319,8 @@ v1.2
 -Cleaned up the App Icon
 </string>
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="smallSystem"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="18" defaultTabInterval="36">
                                                     <tabStops/>
                                                 </paragraphStyle>
                                             </attributes>
@@ -1289,8 +1331,7 @@ v1.1
 
 </string>
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <font key="NSFont" size="11" name="LucidaGrande"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1314,12 +1355,11 @@ v1.1
 -Now compatible with Mac OS 10.8+
 </string>
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="smallSystem"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36">
+                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="36" defaultTabInterval="36">
                                                     <tabStops>
                                                         <textTab alignment="left" location="11"/>
-                                                        <textTab alignment="natural" location="36"/>
+                                                        <textTab alignment="left" location="36"/>
                                                     </tabStops>
                                                 </paragraphStyle>
                                             </attributes>
@@ -1331,8 +1371,7 @@ v1.0
 
 -App Launched! Thank you for using Audio Sweet.</string>
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <font key="NSFont" size="11" name="LucidaGrande"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1354,7 +1393,7 @@ v1.0
                                     </attributedString>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="465" height="266"/>
-                                    <size key="maxSize" width="465" height="10000000"/>
+                                    <size key="maxSize" width="482" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
