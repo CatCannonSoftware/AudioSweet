@@ -34,5 +34,6 @@
 @property (nonatomic) double trueTime;
 @property (nonatomic) double timeForFrames;
 @property (nonatomic) double timeForQuarterFrames;
+@property (nonatomic) NSAlert* missingFieldError;
 
 @end

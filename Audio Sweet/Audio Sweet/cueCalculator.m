@@ -10,26 +10,39 @@
 
 @implementation cueCalculator
 
-@synthesize beats, mathBpm, beatsTimesMinute, bpmTimesTime, time, frames, quarterFrames, trueTime, timeForFrames, timeForQuarterFrames;
+@synthesize beats, mathBpm, beatsTimesMinute, bpmTimesTime, time, frames, quarterFrames, trueTime, timeForFrames, timeForQuarterFrames, missingFieldError;
 
 -(IBAction)calculateTime:(id)sender {
-    beats = [textFieldBeats.stringValue doubleValue];
     mathBpm = [textFieldBPM.stringValue doubleValue];
+    beats = [textFieldBeats.stringValue doubleValue];
     
-    beatsTimesMinute = ((beats) * 60);
-    time = (beatsTimesMinute / mathBpm);
+    if (mathBpm == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The BPM field is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a BPM Value"];
+        [missingFieldError runModal];
+    }
     
-    timeForFrames = (time - trunc(time));
-    frames = (timeForFrames * 24);
+    else if (beats == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The number of beats is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a number of beats"];
+        [missingFieldError runModal];
+    }
     
-    timeForQuarterFrames = (frames - trunc(frames));
-    quarterFrames = (timeForQuarterFrames * 4);
-    
-    NSLog(@"%.f, %.f, %.f", time, frames, quarterFrames);
-    NSLog(@"%.f, %.f", timeForFrames, timeForQuarterFrames);
+    else {
+        beatsTimesMinute = ((beats) * 60);
+        time = (beatsTimesMinute / mathBpm);
+        
+        timeForFrames = (time - trunc(time));
+        frames = (timeForFrames * 24);
+        
+        timeForQuarterFrames = (frames - trunc(frames));
+        quarterFrames = (timeForQuarterFrames * 4);
+        
+        NSLog(@"%.f, %.f, %.f", time, frames, quarterFrames);
+        NSLog(@"%.f, %.f", timeForFrames, timeForQuarterFrames);
+        
+        NSString *stringFloatTime = [[NSString alloc] initWithFormat: @"%.0f sec:%.0f fr;%.0f qf", trunc(time), trunc(frames), trunc(quarterFrames)];
+        labelTime.stringValue = stringFloatTime;
+    }
 
-    NSString *stringFloatTime = [[NSString alloc] initWithFormat: @"%.0f sec:%.0f fr;%.0f qf", trunc(time), trunc(frames), trunc(quarterFrames)];
-    labelTime.stringValue = stringFloatTime;
 }
 
 -(IBAction)calculateBeats:(id)sender {
@@ -37,13 +50,24 @@
     frames = [textFieldFrames.stringValue doubleValue];
     quarterFrames = [texttFieldQuarterFrames.stringValue doubleValue];
     time = [textFieldTime.stringValue doubleValue];
-
-    trueTime = (time + (frames / 24) + (quarterFrames / 96));
     
-    bpmTimesTime = (mathBpm * trueTime);
-    beats = (bpmTimesTime / 60);
-    NSString *stringFloatBeats = [[NSString alloc] initWithFormat: @"%3f", beats];
-    labelBeats.stringValue = stringFloatBeats;
+    if (mathBpm == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The BPM field is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a BPM value."];
+        [missingFieldError runModal];
+    }
+    else if (time == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The number of seconds is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a number of seconds. You may leave frames or quarter frames blank."];
+        [missingFieldError runModal];
+    }
+
+    else {
+        trueTime = (time + (frames / 24) + (quarterFrames / 96));
+        
+        bpmTimesTime = (mathBpm * trueTime);
+        beats = (bpmTimesTime / 60);
+        NSString *stringFloatBeats = [[NSString alloc] initWithFormat: @"%3f", beats];
+        labelBeats.stringValue = stringFloatBeats;
+    }
 }
 
 -(IBAction)calculateTempo:(id)sender {
@@ -52,12 +76,24 @@
     quarterFrames = [texttFieldQuarterFrames2.stringValue doubleValue];
     time = [textFieldTime2.stringValue doubleValue];
     
-    trueTime = (time + (frames / 24) + (quarterFrames / 96));
+    if (time == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The number of seconds is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a number of seconds. You may leave frames or quarter frames blank."];
+        [missingFieldError runModal];
+    }
     
-    beatsTimesMinute = (beats * 60);
-    mathBpm = (beatsTimesMinute / trueTime);
-    NSString *stringFloatBpm = [[NSString alloc] initWithFormat: @"%.3f", mathBpm];
-    labelBPM.stringValue = stringFloatBpm;
+    else if (beats == 0) {
+        missingFieldError =[NSAlert alertWithMessageText:@"The number of beats is empty." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please insert a number of beats"];
+        [missingFieldError runModal];
+    }
+    
+    else {
+        trueTime = (time + (frames / 24) + (quarterFrames / 96));
+        
+        beatsTimesMinute = (beats * 60);
+        mathBpm = (beatsTimesMinute / trueTime);
+        NSString *stringFloatBpm = [[NSString alloc] initWithFormat: @"%.3f", mathBpm];
+        labelBPM.stringValue = stringFloatBpm;
+    }
 }
 
 @end

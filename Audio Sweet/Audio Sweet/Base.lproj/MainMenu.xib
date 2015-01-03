@@ -1100,7 +1100,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="4W9-yu-P4b"/>
+                                <action selector="performClick:" target="cbp-Yl-0XY" id="px1-G7-XjK"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1122,7 +1122,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="jgO-Fg-tuR"/>
+                                <action selector="performClick:" target="cbp-Yl-0XY" id="qn7-Cg-QEu"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1133,7 +1133,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="irI-l3-ymE"/>
+                                <action selector="performClick:" target="jlk-y0-J9W" id="9mc-wG-oLr"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1144,7 +1144,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="hYK-ui-hG1"/>
+                                <action selector="performClick:" target="cbp-Yl-0XY" id="j8X-2q-HXw"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1155,7 +1155,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="xAb-A4-mZf"/>
+                                <action selector="performClick:" target="cbp-Yl-0XY" id="8WP-m3-0Tq"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1166,7 +1166,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="SKg-yI-KW5"/>
+                                <action selector="performClick:" target="jlk-y0-J9W" id="0au-ua-ZeN"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1177,7 +1177,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="CM4-tS-UiD"/>
+                                <action selector="performClick:" target="jlk-y0-J9W" id="ORX-UD-zDm"/>
                             </connections>
                         </textFieldCell>
                     </textField>
@@ -1188,7 +1188,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <connections>
-                                <action selector="performClick:" target="VnN-Ut-ccB" id="1AT-tT-XmD"/>
+                                <action selector="performClick:" target="jlk-y0-J9W" id="2IV-iI-yZ3"/>
                             </connections>
                         </textFieldCell>
                     </textField>

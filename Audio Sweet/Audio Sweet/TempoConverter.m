@@ -25,6 +25,17 @@
     timeStretchValue = percentage;
     // Fix this
     semiToneValue = -(log(changeInTempo))/(log(2)) * (-12);
+    
+    NSAlert *missingFieldError;
+    
+    if (tempo == 0) {
+        missingFieldError = [NSAlert alertWithMessageText:@"The Old Tempo field is empty." defaultButton:@"oK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please specify the old tempo."];
+        [missingFieldError runModal];
+    }
+    else if (newTempo == 0) {
+        missingFieldError = [NSAlert alertWithMessageText:@"The New Tempo field is empty." defaultButton:@"oK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please specify the new tempo."];
+        [missingFieldError runModal];
+    }
 }
 
 -(IBAction)calculateTempo:(NSButton *)sender {
