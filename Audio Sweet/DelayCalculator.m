@@ -41,7 +41,12 @@
     tempo = [tempoTextBox.stringValue doubleValue];
     ms = floor(60000 / tempo);
     
-    if (tempo > 0 || tempo < 600001){
+    if (tempo == 0) {
+        NSAlert *missingFieldError = [NSAlert alertWithMessageText:@"No Tempo was supplied." defaultButton:@"Ok" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Please supply a Tempo."];
+        [missingFieldError runModal];
+    }
+    
+    else if (tempo > 0 || tempo < 600001){
         switch ([noteValues selectedSegment])
         {
             case 0:

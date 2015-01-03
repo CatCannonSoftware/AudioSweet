@@ -264,7 +264,7 @@
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
                         <rect key="frame" x="55" y="6" width="310" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3 Copyright (c) 2014 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3.2 Copyright (c) 2014-2015 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
                             <font key="font" metaFont="miniSystemBold"/>
                             <color key="textColor" red="1" green="0.0" blue="0.0588715764" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1236,7 +1236,14 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                                     <size key="maxSize" width="482" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment>
-                                            <mutableString key="content">v1.3.1
+                                            <mutableString key="content">v1.3.2
+
+-All calculators can now use the enter key in input fields to activate the calculator.
+-Added Error handling to all calculators to prevent the user from using a calculator without supplying values.
+-Fixed some spelling and grammar issues.
+-General code enhancements and cleaning.
+
+v1.3.1
 
 -Fixed some incorrect and inconsistent math logic in the Cue Calculator.
 -Updated the Cue Calculator to accept input and show time values as Seconds, Frames and Quarter frames. (Cue Calculator assumes Quarter notes are the desired beat value and assumes a 24fps frame rate)
@@ -1254,7 +1261,8 @@ v1.2
 
 </mutableString>
                                             <attributes>
-                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <font key="NSFont" size="11" name="LucidaConsole"/>
+                                                <font key="NSOriginalFont" size="11" name="LucidaConsole"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1280,7 +1288,8 @@ v1.2
 -Cleaned up the App Icon
 </string>
                                             <attributes>
-                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <font key="NSFont" size="11" name="LucidaConsole"/>
+                                                <font key="NSOriginalFont" size="11" name="LucidaConsole"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="18" defaultTabInterval="36">
                                                     <tabStops/>
                                                 </paragraphStyle>
@@ -1292,7 +1301,8 @@ v1.1
 
 </string>
                                             <attributes>
-                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <font key="NSFont" size="11" name="LucidaConsole"/>
+                                                <font key="NSOriginalFont" size="11" name="LucidaConsole"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1316,7 +1326,8 @@ v1.1
 -Now compatible with Mac OS 10.8+
 </string>
                                             <attributes>
-                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <font key="NSFont" size="11" name="LucidaConsole"/>
+                                                <font key="NSOriginalFont" size="11" name="LucidaConsole"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="36" defaultTabInterval="36">
                                                     <tabStops>
                                                         <textTab alignment="left" location="11"/>
@@ -1332,7 +1343,8 @@ v1.0
 
 -App Launched! Thank you for using Audio Sweet.</string>
                                             <attributes>
-                                                <font key="NSFont" size="11" name="LucidaGrande"/>
+                                                <font key="NSFont" size="11" name="LucidaConsole"/>
+                                                <font key="NSOriginalFont" size="11" name="LucidaConsole"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
                                                     <tabStops>
                                                         <textTab alignment="left" location="36"/>
@@ -1363,7 +1375,7 @@ v1.0
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="2hA-P2-JnE">
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.92727272727272725" horizontal="NO" id="2hA-P2-JnE">
                             <rect key="frame" x="466" y="1" width="15" height="266"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>

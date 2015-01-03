@@ -6,21 +6,25 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		tOhG+4chAQ94dSla0t0mVSWU2U4=
-		</data>
-		<key>Resources/Assets.car</key>
-		<data>
-		UCl0ONUs4BNbbtMFoh5Mw/66BOU=
+		m6FCDccBZ7FGFQ2sJYaSj32f7tI=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LsQgEZ25wn/Twg0a7vUKR2Wyynw=
+			yQR+GtwqBsyO+kX4yUiRGd5I2Ws=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<data>
+		EPWnZClCepLXTlRBQz8jOgCUyHo=
+		</data>
+		<key>Resources/audioSweetIcon.png</key>
+		<data>
+		6dtYjGDUePVSM8Jj1HiRarCE8fU=
+		</data>
 		<key>Resources/blank.png</key>
 		<data>
 		8zvsO1XFpCLh9uBsJItb2BavEo8=
@@ -29,15 +33,11 @@
 		<data>
 		UrC3G1SYql5zOHWzlgEqv6tsREs=
 		</data>
-		<key>Resources/eighth.png</key>
-		<data>
-		v9dzM4FhSyz8VXJH8jImVhV/oIQ=
-		</data>
 		<key>Resources/en.lproj/Credits.rtf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YKJIFIsxneJuNkJNJQIcJIjiPOg=
+			0NFOKeIazh6FOzKvxcCqD4pgrAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -51,50 +51,30 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/half.png</key>
-		<data>
-		d/H6K1rxT5xkmWJBOV3YEQtWYas=
-		</data>
-		<key>Resources/quarter.psd</key>
-		<data>
-		MtArAQ0ktTD3l0YNzilzayitgX8=
-		</data>
-		<key>Resources/sixteenth.png</key>
-		<data>
-		KQn6dWGtKKpS3FAxBCP2UZT6jys=
-		</data>
-		<key>Resources/sixtyFourth.png</key>
-		<data>
-		rdGJqdwCFhsPZrNjOi060IIlbRo=
-		</data>
-		<key>Resources/thirtySecond_.png</key>
-		<data>
-		NFOVcXCpRJdHG10jLqqIe7bzfMM=
-		</data>
-		<key>Resources/whole.png</key>
-		<data>
-		/8PTENyuo/t8xi5RkZJMjashuS8=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		tOhG+4chAQ94dSla0t0mVSWU2U4=
-		</data>
-		<key>Resources/Assets.car</key>
-		<data>
-		UCl0ONUs4BNbbtMFoh5Mw/66BOU=
+		m6FCDccBZ7FGFQ2sJYaSj32f7tI=
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LsQgEZ25wn/Twg0a7vUKR2Wyynw=
+			yQR+GtwqBsyO+kX4yUiRGd5I2Ws=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<data>
+		EPWnZClCepLXTlRBQz8jOgCUyHo=
+		</data>
+		<key>Resources/audioSweetIcon.png</key>
+		<data>
+		6dtYjGDUePVSM8Jj1HiRarCE8fU=
+		</data>
 		<key>Resources/blank.png</key>
 		<data>
 		8zvsO1XFpCLh9uBsJItb2BavEo8=
@@ -103,15 +83,11 @@
 		<data>
 		UrC3G1SYql5zOHWzlgEqv6tsREs=
 		</data>
-		<key>Resources/eighth.png</key>
-		<data>
-		v9dzM4FhSyz8VXJH8jImVhV/oIQ=
-		</data>
 		<key>Resources/en.lproj/Credits.rtf</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YKJIFIsxneJuNkJNJQIcJIjiPOg=
+			0NFOKeIazh6FOzKvxcCqD4pgrAo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,33 +101,9 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/half.png</key>
-		<data>
-		d/H6K1rxT5xkmWJBOV3YEQtWYas=
-		</data>
-		<key>Resources/quarter.psd</key>
-		<data>
-		MtArAQ0ktTD3l0YNzilzayitgX8=
-		</data>
-		<key>Resources/sixteenth.png</key>
-		<data>
-		KQn6dWGtKKpS3FAxBCP2UZT6jys=
-		</data>
-		<key>Resources/sixtyFourth.png</key>
-		<data>
-		rdGJqdwCFhsPZrNjOi060IIlbRo=
-		</data>
-		<key>Resources/thirtySecond_.png</key>
-		<data>
-		NFOVcXCpRJdHG10jLqqIe7bzfMM=
-		</data>
-		<key>Resources/whole.png</key>
-		<data>
-		/8PTENyuo/t8xi5RkZJMjashuS8=
-		</data>
 		<key>embedded.provisionprofile</key>
 		<data>
-		9UMyielWWg7prR/iRMIr+Uscve4=
+		3O4IByy/mNpjzy3GU/AaAO8hEP4=
 		</data>
 	</dict>
 	<key>rules</key>
