@@ -12,6 +12,9 @@
 		41555354188263470092C060 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534B188263470092C060 /* blank.png */; };
 		41555356188263470092C060 /* drDelayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534D188263470092C060 /* drDelayIcon.png */; };
 		4155535F188273EA0092C060 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4155535E188273EA0092C060 /* StoreKit.framework */; };
+		417750E31BCECF1800F6C797 /* PluginToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 417750E21BCECF1800F6C797 /* PluginToggle.m */; };
+		417750E51BCEE36800F6C797 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 417750E41BCEE36800F6C797 /* right.png */; };
+		417750E71BCEE37000F6C797 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 417750E61BCEE37000F6C797 /* wrong.png */; };
 		41D7835019AC1AD0009956E8 /* cueCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7834F19AC1AD0009956E8 /* cueCalculator.m */; };
 		41DC86351890AAAF005A064C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DC86331890AAAF005A064C /* MainMenu.xib */; };
 		41DD4C6519B0C188007E0501 /* WindowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DD4C6419B0C188007E0501 /* WindowHandler.m */; };
@@ -47,6 +50,10 @@
 		4155534D188263470092C060 /* drDelayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drDelayIcon.png; sourceTree = "<group>"; };
 		4155535D188267B50092C060 /* Audio Sweet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Audio Sweet.entitlements"; sourceTree = "<group>"; };
 		4155535E188273EA0092C060 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		417750E11BCECF1800F6C797 /* PluginToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginToggle.h; sourceTree = "<group>"; };
+		417750E21BCECF1800F6C797 /* PluginToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginToggle.m; sourceTree = "<group>"; };
+		417750E41BCEE36800F6C797 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		417750E61BCEE37000F6C797 /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.png; sourceTree = "<group>"; };
 		41D7834E19AC1AD0009956E8 /* cueCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cueCalculator.h; sourceTree = "<group>"; };
 		41D7834F19AC1AD0009956E8 /* cueCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cueCalculator.m; sourceTree = "<group>"; };
 		41DC86341890AAAF005A064C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -154,6 +161,8 @@
 				4104A51D1884BAE800097804 /* TempoConverter.m */,
 				41DD4C6319B0C188007E0501 /* WindowHandler.h */,
 				41DD4C6419B0C188007E0501 /* WindowHandler.m */,
+				417750E11BCECF1800F6C797 /* PluginToggle.h */,
+				417750E21BCECF1800F6C797 /* PluginToggle.m */,
 				41DC86331890AAAF005A064C /* MainMenu.xib */,
 				41E7DDA7188257B30044AFC0 /* Images.xcassets */,
 				41E7DD96188257B20044AFC0 /* Supporting Files */,
@@ -164,6 +173,8 @@
 		41E7DD96188257B20044AFC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				417750E61BCEE37000F6C797 /* wrong.png */,
+				417750E41BCEE36800F6C797 /* right.png */,
 				41291BEA1885077D00200F23 /* audioSweetIcon.png */,
 				4155534B188263470092C060 /* blank.png */,
 				4155534D188263470092C060 /* drDelayIcon.png */,
@@ -283,7 +294,9 @@
 			files = (
 				41291BEB1885077D00200F23 /* audioSweetIcon.png in Resources */,
 				41555356188263470092C060 /* drDelayIcon.png in Resources */,
+				417750E51BCEE36800F6C797 /* right.png in Resources */,
 				41DC86351890AAAF005A064C /* MainMenu.xib in Resources */,
+				417750E71BCEE37000F6C797 /* wrong.png in Resources */,
 				41E7DD9A188257B20044AFC0 /* InfoPlist.strings in Resources */,
 				41555354188263470092C060 /* blank.png in Resources */,
 				41E7DDA8188257B30044AFC0 /* Images.xcassets in Resources */,
@@ -308,6 +321,7 @@
 			files = (
 				41F2D6A718846E95004B8331 /* FrequencyConverter.m in Sources */,
 				41DD4C6519B0C188007E0501 /* WindowHandler.m in Sources */,
+				417750E31BCECF1800F6C797 /* PluginToggle.m in Sources */,
 				41D7835019AC1AD0009956E8 /* cueCalculator.m in Sources */,
 				4104A51E1884BAE800097804 /* TempoConverter.m in Sources */,
 				41F2D6AA18849FD1004B8331 /* DelayCalculator.m in Sources */,

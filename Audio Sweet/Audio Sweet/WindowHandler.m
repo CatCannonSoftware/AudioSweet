@@ -7,6 +7,7 @@
 //
 
 #import "WindowHandler.h"
+#import "PluginToggle.h"
 
 @implementation WindowHandler
 
@@ -30,6 +31,15 @@
     [cueWindow makeKeyAndOrderFront:cueWindow];
 }
 
+-(IBAction)openToggle:(id)sender {
+    [mainWindow close];
+    [toggleWindow makeKeyAndOrderFront:toggleWindow];
+    NSURL *pathURL = [NSURL fileURLWithPath:[@"~/Library/Audio/Plug-Ins/"stringByExpandingTildeInPath]];
+    [pthctUserLibraryPath setURL:pathURL];
+    PluginToggle* toggleVariable = [[PluginToggle alloc] init];
+    [toggleVariable setUpDefaultImages];
+}
+
 -(IBAction)closeDelay:(id)sender {
     [delayWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
@@ -47,6 +57,10 @@
 
 -(IBAction)closeCue:(id)sender {
     [cueWindow close];
+    [mainWindow makeKeyAndOrderFront:mainWindow];
+}
+-(IBAction)closetoggle:(id)sender {
+    [toggleWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
 }
 
