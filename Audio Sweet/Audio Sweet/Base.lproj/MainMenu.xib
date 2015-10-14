@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
-=======
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
-    <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
->>>>>>> Stashed changes
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -55,6 +48,37 @@
                             <menuItem title="Quit Audio Sweet" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Learn" id="KN6-cK-ZNj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Learn" id="55t-nD-PAU">
+                        <items>
+                            <menuItem title="Delay Calculator" id="oMc-qD-fCp">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="Ohl-QQ-2as" id="FhS-0Q-lAH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tempo Converter" hidden="YES" enabled="NO" id="VLt-Zf-Xoq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="SV4-Im-kjt" id="I0F-DQ-c3A"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Frequency Converter" hidden="YES" enabled="NO" id="l81-26-qKU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="XQO-Ld-hai" id="phO-8W-hb9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Circle of Fifths" hidden="YES" enabled="NO" id="Q0e-md-MR4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="XQO-Ld-hai" id="uzg-oE-R4d"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -138,25 +162,16 @@
         </menu>
         <window title="Main Menu" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-<<<<<<< Updated upstream
             <rect key="contentRect" x="862" y="414" width="420" height="313"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="201" height="220"/>
             <value key="maxSize" type="size" width="201" height="220"/>
-=======
-            <rect key="contentRect" x="862" y="414" width="420" height="354"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
->>>>>>> Stashed changes
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="420" height="354"/>
+                <rect key="frame" x="0.0" y="0.0" width="420" height="313"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wza-B7-Axt">
-<<<<<<< Updated upstream
                         <rect key="frame" x="29" y="265" width="143" height="32"/>
-=======
-                        <rect key="frame" x="29" y="306" width="143" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Delay Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nDM-Bq-zvM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -166,11 +181,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-Yn-1Hd">
-<<<<<<< Updated upstream
                         <rect key="frame" x="26" y="233" width="149" height="32"/>
-=======
-                        <rect key="frame" x="26" y="274" width="149" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Tempo Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OJd-4w-SNa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -180,11 +191,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-aW-lWr">
-<<<<<<< Updated upstream
                         <rect key="frame" x="14" y="199" width="173" height="32"/>
-=======
-                        <rect key="frame" x="14" y="240" width="173" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Frequency Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gVs-Kg-B7R">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -193,64 +200,33 @@
                             <action selector="openFreq:" target="MI4-Rq-Mqv" id="FTP-MI-qWY"/>
                         </connections>
                     </button>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-mN-x8W">
-                        <rect key="frame" x="249" y="245" width="92" height="92"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="audioSweetIcon" id="rG8-Fj-hjU"/>
-                    </imageView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zq-Qq-TJR">
-                        <rect key="frame" x="14" y="207" width="173" height="32"/>
-                        <buttonCell key="cell" type="push" title="Cue Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cEb-7d-GQs">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="openCue:" target="MI4-Rq-Mqv" id="ldg-si-R4l"/>
-                        </connections>
-                    </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd2-qh-1vU">
-<<<<<<< Updated upstream
                         <rect key="frame" x="16" y="133" width="169" height="32"/>
-=======
-                        <rect key="frame" x="15" y="149" width="169" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Audio File Converter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfP-IH-o0z">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-P0-gOe">
-<<<<<<< Updated upstream
                         <rect key="frame" x="19" y="100" width="162" height="32"/>
-=======
-                        <rect key="frame" x="18" y="116" width="162" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Super Slow Downer" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="veF-Ae-EVj">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-Yo-0aP">
-<<<<<<< Updated upstream
                         <rect key="frame" x="38" y="67" width="116" height="32"/>
-=======
-                        <rect key="frame" x="37" y="83" width="116" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Pitch Shifter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yWc-3e-ZYH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
-<<<<<<< Updated upstream
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-mN-x8W">
                         <rect key="frame" x="249" y="204" width="92" height="92"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="audioSweetIcon" id="rG8-Fj-hjU"/>
                     </imageView>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-iE-u02">
                         <rect key="frame" x="222" y="97" width="163" height="89"/>
-=======
-                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-iE-u02">
-                        <rect key="frame" x="221" y="113" width="163" height="89"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="CqW-fI-S1X">
                             <font key="font" metaFont="system" size="10"/>
                             <string key="title">Thanks for using AudioSweet. Please consider rating and reviewing this app. I aim to provide the best software experience I can and getting feedback helps make that possible.</string>
@@ -259,11 +235,7 @@
                         </textFieldCell>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUN-B2-Qgh">
-<<<<<<< Updated upstream
                         <rect key="frame" x="309" y="40" width="54" height="49"/>
-=======
-                        <rect key="frame" x="308" y="56" width="54" height="49"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="audioSweetIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="2ef-s6-nLR">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -273,18 +245,13 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgx-hi-eW8">
-<<<<<<< Updated upstream
                         <rect key="frame" x="225" y="40" width="78" height="34"/>
-=======
-                        <rect key="frame" x="224" y="56" width="78" height="34"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Click here to Rate" id="ATv-qp-7tS">
                             <font key="font" metaFont="system" size="8"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-<<<<<<< Updated upstream
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zq-Qq-TJR">
                         <rect key="frame" x="14" y="166" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Cue Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cEb-7d-GQs">
@@ -298,22 +265,13 @@
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
                         <rect key="frame" x="55" y="6" width="310" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3.2 Copyright (c) 2014-2015 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
-=======
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
-                        <rect key="frame" x="54" y="22" width="310" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.4 Copyright (c) 2015 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
->>>>>>> Stashed changes
                             <font key="font" metaFont="miniSystemBold"/>
                             <color key="textColor" red="1" green="0.0" blue="0.0588715764" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-fQ-NU1">
-<<<<<<< Updated upstream
                         <rect key="frame" x="56" y="39" width="80" height="23"/>
-=======
-                        <rect key="frame" x="55" y="55" width="80" height="23"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="smallSquare" title="Patch Notes" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7QZ-Pe-VIx">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -322,19 +280,8 @@
                             <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="TVr-SY-Bu6"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxA-AT-5mw">
-                        <rect key="frame" x="37" y="176" width="126" height="32"/>
-                        <buttonCell key="cell" type="push" title="Plugin Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sxk-5g-BAv">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="openToggle:" target="MI4-Rq-Mqv" id="lgi-5E-4GV"/>
-                        </connections>
-                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-104" y="206"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -360,7 +307,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="507" height="291"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-<<<<<<< Updated upstream
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoV-Bu-vMm">
                         <rect key="frame" x="230" y="254" width="47" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Tempo" id="4CW-nc-jhS">
@@ -371,12 +317,8 @@
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40e-Jk-b4U">
                         <rect key="frame" x="217" y="193" width="73" height="17"/>
-=======
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40e-Jk-b4U">
-                        <rect key="frame" x="215" y="193" width="73" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Note Value" id="iUl-KH-MNJ">
-                            <font key="font" metaFont="systemBold"/>
+                            <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -423,18 +365,6 @@
                             <action selector="tempoConvert:" target="R7S-WZ-081" id="bxk-ic-S38"/>
                         </connections>
                     </segmentedControl>
-<<<<<<< Updated upstream
-=======
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyU-Cl-8OD">
-                        <rect key="frame" x="205" y="224" width="96" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="BPM" drawsBackground="YES" id="fv0-k5-hbe">
-                            <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="#,##0.###" negativeFormat="#,##0.###" numberStyle="decimal" paddingCharacter="*" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" decimalSeparator="." groupingSeparator="," currencyDecimalSeparator="." plusSign="+" minusSign="-" notANumberSymbol="NaN" perMillSymbol="‰" percentSymbol="%" exponentSymbol="E" positivePrefix="" positiveSuffix="" negativePrefix="-" negativeSuffix="" id="137-Eq-TrF"/>
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
->>>>>>> Stashed changes
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dw9-qT-Zel">
                         <rect key="frame" x="212" y="83" width="78" height="14"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Values in ms" id="tlH-ly-dT0">
@@ -497,7 +427,6 @@
                             <action selector="closeDelay:" target="MI4-Rq-Mqv" id="ttl-eB-6jk"/>
                         </connections>
                     </button>
-<<<<<<< Updated upstream
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyU-Cl-8OD">
                         <rect key="frame" x="205" y="224" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="BPM" drawsBackground="YES" id="fv0-k5-hbe">
@@ -508,14 +437,6 @@
                             <connections>
                                 <action selector="performClick:" target="biH-X9-hO1" id="gyr-ra-QZb"/>
                             </connections>
-=======
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hoV-Bu-vMm">
-                        <rect key="frame" x="230" y="254" width="47" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Tempo" id="4CW-nc-jhS">
-                            <font key="font" metaFont="systemBold"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
->>>>>>> Stashed changes
                         </textFieldCell>
                     </textField>
                 </subviews>
@@ -861,11 +782,7 @@
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75e-R1-IHh">
                         <rect key="frame" x="159" y="218" width="118" height="22"/>
-<<<<<<< Updated upstream
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="t8Z-51-2jg">
-=======
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="t8Z-51-2jg">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -876,19 +793,7 @@
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p57-PW-ioO">
                         <rect key="frame" x="159" y="186" width="118" height="22"/>
-<<<<<<< Updated upstream
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="J93-Ve-cFs">
-=======
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="J93-Ve-cFs">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7D-IA-N5T">
-                        <rect key="frame" x="159" y="130" width="118" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="%" drawsBackground="YES" id="zdz-mf-pn3">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1029,7 +934,6 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                 </subviews>
             </view>
         </window>
-<<<<<<< Updated upstream
         <window title="Tempo Converter - How it Works" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="SV4-Im-kjt" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
             <rect key="contentRect" x="196" y="112" width="276" height="378"/>
@@ -1052,24 +956,14 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <rect key="contentRect" x="1441" y="99" width="665" height="313"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-=======
-        <window title="Cue Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Odb-CG-uns">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="1441" y="99" width="665" height="291"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
->>>>>>> Stashed changes
             <value key="minSize" type="size" width="297" height="231"/>
             <value key="maxSize" type="size" width="297" height="231"/>
             <view key="contentView" id="eLQ-ht-zCX">
-                <rect key="frame" x="0.0" y="0.0" width="665" height="291"/>
+                <rect key="frame" x="0.0" y="0.0" width="665" height="313"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-xO-qHj">
-<<<<<<< Updated upstream
                         <rect key="frame" x="26" y="236" width="99" height="17"/>
-=======
-                        <rect key="frame" x="26" y="214" width="99" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Tempo" id="Dmp-Zf-pp7">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1077,48 +971,15 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-Kg-Neb">
-<<<<<<< Updated upstream
                         <rect key="frame" x="26" y="189" width="132" height="17"/>
-=======
-                        <rect key="frame" x="26" y="167" width="132" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired Length (sec)" id="QJO-CN-BO1">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-<<<<<<< Updated upstream
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Tc-e7k">
                         <rect key="frame" x="26" y="129" width="159" height="17"/>
-=======
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-bg-p5i">
-                        <rect key="frame" x="215" y="212" width="118" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ise-BQ-Sc7">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUG-J5-GaO">
-                        <rect key="frame" x="369" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Sec" drawsBackground="YES" id="9Bu-9T-Ede">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-d2-rCd">
-                        <rect key="frame" x="215" y="105" width="118" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="AGw-Oi-k1g">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Tc-e7k">
-                        <rect key="frame" x="26" y="107" width="159" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Desired number of Beats" id="b5B-8p-8Zf">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1126,11 +987,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-Ut-ccB">
-<<<<<<< Updated upstream
                         <rect key="frame" x="209" y="66" width="133" height="32"/>
-=======
-                        <rect key="frame" x="209" y="44" width="133" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Calculate Time" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="V0A-T3-117">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1139,29 +996,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <action selector="calculateTime:" target="WNf-XJ-54L" id="plu-hG-dIM"/>
                         </connections>
                     </button>
-<<<<<<< Updated upstream
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-hB-7xI">
                         <rect key="frame" x="366" y="276" width="127" height="17"/>
-=======
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9f-wy-Nq6">
-                        <rect key="frame" x="369" y="212" width="118" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="BPM" drawsBackground="YES" id="ceg-wz-yeq">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSC-UH-dIp">
-                        <rect key="frame" x="516" y="104" width="118" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Beats" drawsBackground="YES" id="aNP-I0-gHM">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-hB-7xI">
-                        <rect key="frame" x="366" y="254" width="127" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Time -> Beats" id="qJq-1t-ziM">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1169,11 +1005,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbC-Sc-aHU">
-<<<<<<< Updated upstream
                         <rect key="frame" x="212" y="276" width="127" height="17"/>
-=======
-                        <rect key="frame" x="212" y="254" width="127" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BPM/Beats -> Time" id="ObP-OC-x8M">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1181,11 +1013,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-pb-eFZ">
-<<<<<<< Updated upstream
                         <rect key="frame" x="512" y="276" width="127" height="17"/>
-=======
-                        <rect key="frame" x="512" y="254" width="127" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time/Beats -> BPM" id="Hmu-Pk-Lyd">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1193,11 +1021,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbp-Yl-0XY">
-<<<<<<< Updated upstream
                         <rect key="frame" x="362" y="66" width="135" height="32"/>
-=======
-                        <rect key="frame" x="362" y="44" width="135" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Calculate Beats" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gsa-EA-9xa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1207,11 +1031,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlk-y0-J9W">
-<<<<<<< Updated upstream
                         <rect key="frame" x="511" y="66" width="128" height="32"/>
-=======
-                        <rect key="frame" x="511" y="44" width="128" height="32"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="push" title="Calculate BPM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hRD-vv-6nb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1221,11 +1041,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-u3-mqO">
-<<<<<<< Updated upstream
                         <rect key="frame" x="369" y="126" width="118" height="17"/>
-=======
-                        <rect key="frame" x="369" y="104" width="118" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="# Beats" drawsBackground="YES" id="p02-kJ-u9E">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1233,11 +1049,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f67-al-FTj">
-<<<<<<< Updated upstream
                         <rect key="frame" x="215" y="189" width="118" height="17"/>
-=======
-                        <rect key="frame" x="215" y="167" width="118" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Time" drawsBackground="YES" id="TVN-1a-dPR">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1245,11 +1057,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3f0-a7-fJl">
-<<<<<<< Updated upstream
                         <rect key="frame" x="517" y="236" width="116" height="17"/>
-=======
-                        <rect key="frame" x="517" y="214" width="116" height="17"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="BPM" drawsBackground="YES" id="ZKY-Ob-r1T">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1257,11 +1065,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRR-d2-Eec">
-<<<<<<< Updated upstream
                         <rect key="frame" x="213" y="30" width="424" height="32"/>
-=======
-                        <rect key="frame" x="213" y="8" width="424" height="32"/>
->>>>>>> Stashed changes
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Note: Cue Calculator assumes Desired Number of Beats is in Quarter notes and that your project Frames Per Second is 24. " id="63a-IB-z1T">
                             <font key="font" metaFont="miniSystemBold"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1269,11 +1073,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-SP-8vM">
-<<<<<<< Updated upstream
                         <rect key="frame" x="28" y="42" width="75" height="23"/>
-=======
-                        <rect key="frame" x="28" y="19" width="75" height="23"/>
->>>>>>> Stashed changes
                         <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i5d-yQ-njv">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -1338,13 +1138,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1z-wC-GAc">
-<<<<<<< Updated upstream
                         <rect key="frame" x="413" y="187" width="32" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="gNd-vm-au7">
-=======
-                        <rect key="frame" x="412" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="gNd-vm-au7">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1354,13 +1149,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSH-0k-i4f">
-<<<<<<< Updated upstream
                         <rect key="frame" x="456" y="187" width="32" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="gsc-nd-hK0">
-=======
-                        <rect key="frame" x="455" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="gsc-nd-hK0">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1370,13 +1160,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6sG-9U-QCE">
-<<<<<<< Updated upstream
                         <rect key="frame" x="518" y="187" width="32" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Sec" drawsBackground="YES" id="uyT-mg-IIc">
-=======
-                        <rect key="frame" x="517" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Sec" drawsBackground="YES" id="uyT-mg-IIc">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1386,13 +1171,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLg-eP-bFj">
-<<<<<<< Updated upstream
                         <rect key="frame" x="561" y="187" width="32" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="lVb-jx-JcW">
-=======
-                        <rect key="frame" x="560" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Fr" drawsBackground="YES" id="lVb-jx-JcW">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1402,13 +1182,8 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-Vo-kYJ">
-<<<<<<< Updated upstream
                         <rect key="frame" x="604" y="187" width="32" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="DaT-lE-cop">
-=======
-                        <rect key="frame" x="603" y="165" width="32" height="22"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="QF" drawsBackground="YES" id="DaT-lE-cop">
->>>>>>> Stashed changes
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1419,11 +1194,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                     </textField>
                 </subviews>
             </view>
-<<<<<<< Updated upstream
             <point key="canvasLocation" x="290.5" y="427.5"/>
-=======
-            <point key="canvasLocation" x="-262.5" y="-122.5"/>
->>>>>>> Stashed changes
         </window>
         <customObject id="WNf-XJ-54L" customClass="cueCalculator">
             <connections>
@@ -1445,23 +1216,14 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
         <window title="Patch Notes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="CVM-ow-jov">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES" bottomStrut="YES"/>
-<<<<<<< Updated upstream
             <rect key="contentRect" x="-480" y="294" width="480" height="266"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
-=======
-            <rect key="contentRect" x="480" y="294" width="480" height="519"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
->>>>>>> Stashed changes
             <view key="contentView" id="tSO-D9-AaW">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="519"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="266"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-YY-ZGb">
-<<<<<<< Updated upstream
                         <rect key="frame" x="-1" y="-1" width="482" height="268"/>
-=======
-                        <rect key="frame" x="-1" y="-1" width="482" height="521"/>
->>>>>>> Stashed changes
                         <clipView key="contentView" id="Tc5-l7-1gU">
                             <rect key="frame" x="1" y="1" width="465" height="266"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1470,7 +1232,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                                     <rect key="frame" x="0.0" y="0.0" width="465" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="465" height="519"/>
+                                    <size key="minSize" width="465" height="266"/>
                                     <size key="maxSize" width="482" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment>
@@ -1603,7 +1365,7 @@ v1.0
                                         </fragment>
                                     </attributedString>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="465" height="519"/>
+                                    <size key="minSize" width="465" height="266"/>
                                     <size key="maxSize" width="482" height="10000000"/>
                                 </textView>
                             </subviews>
@@ -1626,7 +1388,6 @@ v1.0
                     <constraint firstAttribute="bottom" secondItem="u2j-YY-ZGb" secondAttribute="bottom" constant="-1" id="qpd-YD-o7K"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="443" y="410.5"/>
         </window>
         <customObject id="MI4-Rq-Mqv" customClass="WindowHandler">
             <connections>
@@ -1635,202 +1396,11 @@ v1.0
                 <outlet property="freqWindow" destination="o8x-ES-gdi" id="tLa-Q8-h8S"/>
                 <outlet property="mainWindow" destination="371" id="Q8A-kG-mc5"/>
                 <outlet property="tempoWindow" destination="8kZ-aq-mLI" id="H8Q-N5-oQY"/>
-                <outlet property="toggleWindow" destination="xrL-ct-pK6" id="X2y-bg-Yhj"/>
             </connections>
         </customObject>
-        <window title="Plugin Toggle" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="xrL-ct-pK6">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="207" width="461" height="216"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-            <view key="contentView" id="8OS-mt-93B">
-                <rect key="frame" x="0.0" y="0.0" width="461" height="216"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaW-qR-9by">
-                        <rect key="frame" x="0.0" y="-13" width="226" height="229"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="9i9-9e-HLj">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" red="0.43178574809999998" green="0.70929369340000004" blue="0.38220180349999999" alpha="1" colorSpace="calibratedRGB"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FM8-nP-6eV">
-                        <rect key="frame" x="222" y="-13" width="239" height="229"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="NDs-3i-0Gi">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-qg-vGL">
-                        <rect key="frame" x="366" y="13" width="75" height="23"/>
-                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OGh-hb-e7k">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="closeToggle:" target="MI4-Rq-Mqv" id="ekg-K3-cim"/>
-                        </connections>
-                    </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIL-2Y-2NX">
-                        <rect key="frame" x="10" y="179" width="84" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Plugin Type" id="mUp-wA-Ntb">
-                            <font key="font" metaFont="systemBold"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXn-Bt-Vca">
-                        <rect key="frame" x="41" y="149" width="22" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="AU" id="M7s-E4-21K">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9E9-sC-5M5">
-                        <rect key="frame" x="38" y="116" width="28" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="VST" id="c4p-Rt-QwZ">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-LR-mtA">
-                        <rect key="frame" x="34" y="83" width="36" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="RTAS" id="ksm-L5-hzH">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u42-VI-X3l">
-                        <rect key="frame" x="36" y="51" width="33" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TDM" id="cXK-NF-um9">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwN-yc-FhD">
-                        <rect key="frame" x="37" y="20" width="31" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="AAX" id="C77-iY-3VW">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qh-1r-UZn">
-                        <rect key="frame" x="104" y="140" width="34" height="34"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="right" id="GBz-4t-8UC"/>
-                    </imageView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QBC-Vy-8TO">
-                        <rect key="frame" x="104" y="107" width="34" height="34"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="right" id="kiX-qM-v99"/>
-                    </imageView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZL-zj-N5T">
-                        <rect key="frame" x="104" y="74" width="34" height="34"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="right" id="AkV-aP-BnW"/>
-                    </imageView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-UV-Oua">
-                        <rect key="frame" x="104" y="42" width="34" height="34"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="right" id="Mmq-vx-CYM"/>
-                    </imageView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvX-00-gr7">
-                        <rect key="frame" x="104" y="11" width="34" height="34"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="right" id="Fck-of-qEW"/>
-                    </imageView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ura-MM-qrx">
-                        <rect key="frame" x="144" y="140" width="74" height="32"/>
-                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NCo-TB-kVp">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWG-ks-w0H">
-                        <rect key="frame" x="144" y="107" width="74" height="32"/>
-                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gFo-79-eqm">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="glx-Q4-5j8">
-                        <rect key="frame" x="144" y="74" width="74" height="32"/>
-                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SAN-Ml-GJh">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-uB-oYC">
-                        <rect key="frame" x="144" y="42" width="74" height="32"/>
-                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kKi-Ta-2ra">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erP-Yt-n6q">
-                        <rect key="frame" x="144" y="11" width="74" height="32"/>
-                        <buttonCell key="cell" type="push" title="Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rup-n7-vDz">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-dK-IeD">
-                        <rect key="frame" x="241" y="174" width="135" height="25"/>
-                        <buttonCell key="cell" type="squareTextured" title="Open Plugins Folder" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M8F-I7-kGU">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sga-z6-BHb">
-                        <rect key="frame" x="241" y="111" width="123" height="25"/>
-                        <buttonCell key="cell" type="squareTextured" title="Open User Plugins" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FOT-3g-I97">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JG9-Fc-EDC">
-                        <rect key="frame" x="241" y="146" width="200" height="22"/>
-                        <pathCell key="cell" selectable="YES" alignment="left" id="Q44-29-gqe">
-                            <font key="font" metaFont="system"/>
-                            <url key="url" string="file:///Library/Audio/Plugins"/>
-                            <color key="backgroundColor" red="0.8980392157" green="0.92549019610000005" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
-                        </pathCell>
-                    </pathControl>
-                    <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMN-7F-dlf">
-                        <rect key="frame" x="241" y="77" width="200" height="22"/>
-                        <pathCell key="cell" selectable="YES" alignment="left" id="MO4-xc-XS0">
-                            <font key="font" metaFont="system"/>
-                            <url key="url" string="NSHomeDirectory/Library/Audio/Plug-Ins">
-                                <url key="baseURL" string="file:///"/>
-                            </url>
-                            <color key="backgroundColor" red="0.89803921568627454" green="0.92549019607843142" blue="0.97254901960784312" alpha="1" colorSpace="deviceRGB"/>
-                        </pathCell>
-                    </pathControl>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tge-1m-fH1">
-                        <rect key="frame" x="103" y="179" width="36" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="State" id="Cit-dh-5e9">
-                            <font key="font" metaFont="systemBold"/>
-                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                </subviews>
-            </view>
-            <point key="canvasLocation" x="315.5" y="261"/>
-        </window>
-        <drawer trailingOffset="15" id="Idb-g5-OVZ">
-            <size key="contentSize" width="100" height="100"/>
-            <size key="maxContentSize" width="10000" height="10000"/>
-            <connections>
-                <outlet property="parentWindow" destination="xrL-ct-pK6" id="RU4-eh-YRK"/>
-            </connections>
-        </drawer>
     </objects>
     <resources>
         <image name="audioSweetIcon" width="767" height="763.91998291015625"/>
         <image name="drDelayIcon" width="1024" height="1024"/>
-        <image name="right" width="32" height="32"/>
     </resources>
 </document>

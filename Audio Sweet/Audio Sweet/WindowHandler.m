@@ -29,10 +29,7 @@
     [mainWindow close];
     [cueWindow makeKeyAndOrderFront:cueWindow];
 }
--(IBAction)openToggle:(id)sender {
-    [mainWindow close];
-    [toggleWindow makeKeyAndOrderFront:toggleWindow];
-}
+
 -(IBAction)closeDelay:(id)sender {
     [delayWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
@@ -50,10 +47,6 @@
 
 -(IBAction)closeCue:(id)sender {
     [cueWindow close];
-    [mainWindow makeKeyAndOrderFront:mainWindow];
-}
--(IBAction)closeToggle:(id)sender {
-    [toggleWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
 }
 

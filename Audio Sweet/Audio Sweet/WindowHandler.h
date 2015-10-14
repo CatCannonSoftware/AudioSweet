@@ -14,7 +14,6 @@
     IBOutlet NSWindow *tempoWindow;
     IBOutlet NSWindow *freqWindow;
     IBOutlet NSWindow *cueWindow;
-    IBOutlet NSWindow *toggleWindow;
 }
 
 @end
