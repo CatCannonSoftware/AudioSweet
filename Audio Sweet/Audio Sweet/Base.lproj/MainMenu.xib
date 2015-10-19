@@ -162,16 +162,16 @@
         </menu>
         <window title="Main Menu" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="862" y="414" width="420" height="365"/>
+            <rect key="contentRect" x="862" y="414" width="382" height="382"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="201" height="220"/>
             <value key="maxSize" type="size" width="201" height="220"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="420" height="365"/>
+                <rect key="frame" x="0.0" y="0.0" width="382" height="382"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-Yn-1Hd">
-                        <rect key="frame" x="14" y="285" width="173" height="32"/>
+                        <rect key="frame" x="14" y="302" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Tempo Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OJd-4w-SNa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -181,7 +181,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-aW-lWr">
-                        <rect key="frame" x="14" y="251" width="173" height="32"/>
+                        <rect key="frame" x="14" y="268" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Frequency Converter" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gVs-Kg-B7R">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -191,32 +191,32 @@
                         </connections>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd2-qh-1vU">
-                        <rect key="frame" x="16" y="164" width="169" height="32"/>
+                        <rect key="frame" x="16" y="149" width="169" height="32"/>
                         <buttonCell key="cell" type="push" title="Audio File Converter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfP-IH-o0z">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-P0-gOe">
-                        <rect key="frame" x="16" y="131" width="162" height="32"/>
+                        <rect key="frame" x="16" y="116" width="162" height="32"/>
                         <buttonCell key="cell" type="push" title="Super Slow Downer" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="veF-Ae-EVj">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-Yo-0aP">
-                        <rect key="frame" x="35" y="98" width="116" height="32"/>
+                        <rect key="frame" x="35" y="83" width="116" height="32"/>
                         <buttonCell key="cell" type="push" title="Pitch Shifter" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yWc-3e-ZYH">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpo-mN-x8W">
-                        <rect key="frame" x="249" y="256" width="92" height="92"/>
+                        <rect key="frame" x="249" y="273" width="92" height="92"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="audioSweetIcon" id="rG8-Fj-hjU"/>
                     </imageView>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-iE-u02">
-                        <rect key="frame" x="219" y="128" width="163" height="89"/>
+                        <rect key="frame" x="219" y="145" width="163" height="89"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="CqW-fI-S1X">
                             <font key="font" metaFont="system" size="10"/>
                             <string key="title">Thanks for using AudioSweet. Please consider rating and reviewing this app. I aim to provide the best software experience I can and getting feedback helps make that possible.</string>
@@ -225,7 +225,7 @@
                         </textFieldCell>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUN-B2-Qgh">
-                        <rect key="frame" x="306" y="71" width="54" height="49"/>
+                        <rect key="frame" x="306" y="88" width="54" height="49"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="audioSweetIcon" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="2ef-s6-nLR">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -235,7 +235,7 @@
                         </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgx-hi-eW8">
-                        <rect key="frame" x="222" y="71" width="78" height="34"/>
+                        <rect key="frame" x="222" y="88" width="78" height="34"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Click here to Rate" id="ATv-qp-7tS">
                             <font key="font" metaFont="system" size="8"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -243,7 +243,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zq-Qq-TJR">
-                        <rect key="frame" x="14" y="218" width="173" height="32"/>
+                        <rect key="frame" x="14" y="235" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Cue Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cEb-7d-GQs">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -252,26 +252,8 @@
                             <action selector="openCue:" target="MI4-Rq-Mqv" id="ldg-si-R4l"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
-                        <rect key="frame" x="52" y="37" width="310" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3.2 Copyright (c) 2014-2015 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
-                            <font key="font" metaFont="miniSystemBold"/>
-                            <color key="textColor" red="1" green="0.0" blue="0.0588715764" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textFieldCell>
-                    </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-fQ-NU1">
-                        <rect key="frame" x="53" y="70" width="80" height="23"/>
-                        <buttonCell key="cell" type="smallSquare" title="Patch Notes" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7QZ-Pe-VIx">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="TVr-SY-Bu6"/>
-                        </connections>
-                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yx2-X9-wLa">
-                        <rect key="frame" x="14" y="189" width="173" height="32"/>
+                        <rect key="frame" x="14" y="206" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Plugin Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hrj-k4-f8D">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -281,7 +263,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wza-B7-Axt">
-                        <rect key="frame" x="14" y="318" width="173" height="32"/>
+                        <rect key="frame" x="14" y="335" width="173" height="32"/>
                         <buttonCell key="cell" type="push" title="Delay Calculator" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nDM-Bq-zvM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -290,9 +272,37 @@
                             <action selector="openDelay:" target="MI4-Rq-Mqv" id="zfs-Wp-AXD"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-Lw-v90">
+                        <rect key="frame" x="14" y="174" width="173" height="32"/>
+                        <buttonCell key="cell" type="push" title="System Scripts" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hxb-78-GLU">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makeKeyAndOrderFront:" target="xDR-ck-Nfe" id="fnL-Ue-TOz"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-nc-7gG">
+                        <rect key="frame" x="52" y="20" width="310" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Audio Sweet v1.3.2 Copyright (c) 2014-2015 Jeffrey Brice" drawsBackground="YES" id="C08-Qp-b9Y">
+                            <font key="font" metaFont="miniSystemBold"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0588715764" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-fQ-NU1">
+                        <rect key="frame" x="53" y="53" width="80" height="23"/>
+                        <buttonCell key="cell" type="smallSquare" title="Patch Notes" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7QZ-Pe-VIx">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="makeKeyAndOrderFront:" target="CVM-ow-jov" id="TVr-SY-Bu6"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="140" y="191.5"/>
+            <point key="canvasLocation" x="121" y="200"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -1441,14 +1451,13 @@ v1.0
                         <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" id="IPa-O6-FfI">
                             <font key="font" metaFont="smallSystem"/>
                             <url key="url" string="file:///Library/Audio/Plug-Ins/"/>
-                            <color key="backgroundColor" red="0.8980392157" green="0.92549019610000005" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.92549019607843142" blue="0.97254901960784312" alpha="1" colorSpace="deviceRGB"/>
                         </pathCell>
                     </pathControl>
                     <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSO-Az-qPG">
-                        <rect key="frame" x="260" y="103" width="249" height="20"/>
                         <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" id="zdG-QH-JRn">
                             <font key="font" metaFont="smallSystem"/>
-                            <color key="backgroundColor" red="0.8980392157" green="0.92549019610000005" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.89803921568627454" green="0.92549019607843142" blue="0.97254901960784312" alpha="1" colorSpace="deviceRGB"/>
                         </pathCell>
                     </pathControl>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmq-fT-lMP">
@@ -1682,6 +1691,51 @@ v1.0
                 <outlet property="rtasImage" destination="XQX-w2-MPY" id="DZy-zc-1VF"/>
                 <outlet property="tdmImage" destination="YCi-5v-Qk8" id="KZy-4B-tIs"/>
                 <outlet property="vstImage" destination="LYp-ds-uhj" id="lQf-kc-Nwk"/>
+            </connections>
+        </customObject>
+        <window title="System Scripts" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="xDR-ck-Nfe">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="207" width="636" height="355"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="G6R-aJ-lxr">
+                <rect key="frame" x="0.0" y="0.0" width="636" height="355"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SxJ-o9-r0S">
+                        <rect key="frame" x="20" y="234" width="594" height="101"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" drawsBackground="YES" id="UVg-PW-8vO">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="1" green="0.40716623182683209" blue="0.40739649072075579" alpha="1" colorSpace="calibratedRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-6L-hX2">
+                        <rect key="frame" x="21" y="301" width="209" height="32"/>
+                        <buttonCell key="cell" type="push" title="Purge Ram and Disk Cache" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o6b-fd-vbp">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="systemPurge:" target="C4n-f6-LBF" id="ka2-Sz-6Ma"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zao-TI-Wqk">
+                        <rect key="frame" x="25" y="239" width="593" height="68"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="crf-rf-uql">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Frees up RAM that is loaded but unused. Also purges the disk cache. This will not purge memory currently being used but should be used with caution. Do not use while your DAW is playing back or processing audio. Doing so could cause file corruption or errors. Will require you admin password.</string>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="408" y="643.5"/>
+        </window>
+        <customObject id="C4n-f6-LBF" customClass="SystemScripts">
+            <connections>
+                <outlet property="btnPurge" destination="8nd-6L-hX2" id="bPV-dQ-JQ9"/>
             </connections>
         </customObject>
     </objects>

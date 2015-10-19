@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4104A51E1884BAE800097804 /* TempoConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4104A51D1884BAE800097804 /* TempoConverter.m */; };
 		41291BEB1885077D00200F23 /* audioSweetIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41291BEA1885077D00200F23 /* audioSweetIcon.png */; };
+		412923BB1BD5ACF2001DC63B /* SystemScripts.m in Sources */ = {isa = PBXBuildFile; fileRef = 412923BA1BD5ACF2001DC63B /* SystemScripts.m */; };
 		41555354188263470092C060 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534B188263470092C060 /* blank.png */; };
 		41555356188263470092C060 /* drDelayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4155534D188263470092C060 /* drDelayIcon.png */; };
 		4155535F188273EA0092C060 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4155535E188273EA0092C060 /* StoreKit.framework */; };
@@ -46,6 +47,8 @@
 		4104A51C1884BAE800097804 /* TempoConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoConverter.h; sourceTree = "<group>"; };
 		4104A51D1884BAE800097804 /* TempoConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoConverter.m; sourceTree = "<group>"; };
 		41291BEA1885077D00200F23 /* audioSweetIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = audioSweetIcon.png; sourceTree = "<group>"; };
+		412923B91BD5ACF2001DC63B /* SystemScripts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemScripts.h; sourceTree = "<group>"; };
+		412923BA1BD5ACF2001DC63B /* SystemScripts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemScripts.m; sourceTree = "<group>"; };
 		4155534B188263470092C060 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		4155534D188263470092C060 /* drDelayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drDelayIcon.png; sourceTree = "<group>"; };
 		4155535D188267B50092C060 /* Audio Sweet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Audio Sweet.entitlements"; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				417750E11BCECF1800F6C797 /* PluginToggle.h */,
 				417750E21BCECF1800F6C797 /* PluginToggle.m */,
 				41DC86331890AAAF005A064C /* MainMenu.xib */,
+				412923B91BD5ACF2001DC63B /* SystemScripts.h */,
+				412923BA1BD5ACF2001DC63B /* SystemScripts.m */,
 				41E7DDA7188257B30044AFC0 /* Images.xcassets */,
 				41E7DD96188257B20044AFC0 /* Supporting Files */,
 			);
@@ -319,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412923BB1BD5ACF2001DC63B /* SystemScripts.m in Sources */,
 				41F2D6A718846E95004B8331 /* FrequencyConverter.m in Sources */,
 				41DD4C6519B0C188007E0501 /* WindowHandler.m in Sources */,
 				417750E31BCECF1800F6C797 /* PluginToggle.m in Sources */,
