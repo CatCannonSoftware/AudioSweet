@@ -15,6 +15,7 @@
     IBOutlet NSWindow *freqWindow;
     IBOutlet NSWindow *cueWindow;
     IBOutlet NSWindow *toggleWindow;
+    IBOutlet NSWindow *systemScriptsWindow;
     IBOutlet NSPathControl *pthctUserLibraryPath;
 }
 

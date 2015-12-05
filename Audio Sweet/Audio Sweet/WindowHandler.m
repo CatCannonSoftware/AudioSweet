@@ -26,6 +26,11 @@
     [freqWindow makeKeyAndOrderFront:freqWindow];
 }
 
+-(IBAction)openSystemScripts:(id)sender {
+    [mainWindow close];
+    [systemScriptsWindow makeKeyAndOrderFront:freqWindow];
+}
+
 -(IBAction)openCue:(id)sender {
     [mainWindow close];
     [cueWindow makeKeyAndOrderFront:cueWindow];
@@ -33,15 +38,20 @@
 
 -(IBAction)openToggle:(id)sender {
     [mainWindow close];
-    [toggleWindow makeKeyAndOrderFront:toggleWindow];
+    PluginToggle *pluginInstance = [[PluginToggle alloc] init];
+    [pluginInstance setImages];
     NSURL *pathURL = [NSURL fileURLWithPath:[@"~/Library/Audio/Plug-Ins/"stringByExpandingTildeInPath]];
     [pthctUserLibraryPath setURL:pathURL];
-    PluginToggle* toggleVariable = [[PluginToggle alloc] init];
-    [toggleVariable setUpDefaultImages];
+    [toggleWindow makeKeyAndOrderFront:toggleWindow];
 }
 
 -(IBAction)closeDelay:(id)sender {
     [delayWindow close];
+    [mainWindow makeKeyAndOrderFront:mainWindow];
+}
+
+-(IBAction)closeSystemScripts:(id)sender {
+    [systemScriptsWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
 }
 

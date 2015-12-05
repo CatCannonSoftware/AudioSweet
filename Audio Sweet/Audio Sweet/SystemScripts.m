@@ -11,9 +11,15 @@
 @implementation SystemScripts
 
 -(IBAction)systemPurge:(id)sender {
+    AuthorizationRef auth = NULL;
+    OSStatus err = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagInteractionAllowed, &auth);
+    err = AuthorizationExecuteWithPrivileges(auth, command, kAuthorizationFlagDefaults, args, NULL);
+    
     NSTask *purge = [[NSTask alloc] init];
-    purge.launchPath = @"/bin/bash";
-    purge.arguments = @[@"sudo", @"purge"];
+    purge.launchPath = @"/usr/sbin/purge";
+    purge.arguments = @[@"sudo"];
+    
+    [purge setArguments:args];
     
     [purge launch];
     NSAlert *alert = [[NSAlert alloc] init];

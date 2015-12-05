@@ -33,6 +33,6 @@
 @property (nonatomic) NSImage *right;
 @property (nonatomic) NSImage *wrong;
 -(void)setImages;
--(void)setUpDefaultImages;
++(void)setUpDefaultImages;
 
 @end
