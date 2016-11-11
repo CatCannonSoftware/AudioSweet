@@ -10,11 +10,7 @@
 
 @implementation SystemScripts
 
--(IBAction)systemPurge:(id)sender {
-    AuthorizationRef auth = NULL;
-    OSStatus err = AuthorizationCreate(NULL, kAuthorizationEmptyEnvironment, kAuthorizationFlagInteractionAllowed, &auth);
-    err = AuthorizationExecuteWithPrivileges(auth, command, kAuthorizationFlagDefaults, args, NULL);
-    
+-(IBAction)systemPurge:(id)sender {    
     NSTask *purge = [[NSTask alloc] init];
     purge.launchPath = @"/usr/sbin/purge";
     purge.arguments = @[@"sudo"];
