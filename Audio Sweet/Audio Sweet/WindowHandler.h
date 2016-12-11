@@ -16,6 +16,8 @@
     IBOutlet NSWindow *cueWindow;
     IBOutlet NSWindow *toggleWindow;
     IBOutlet NSWindow *systemScriptsWindow;
+    IBOutlet NSWindow *speedSoundWindow;
+    IBOutlet NSWindow *roomModeWindow;
     IBOutlet NSPathControl *pthctUserLibraryPath;
 }
 

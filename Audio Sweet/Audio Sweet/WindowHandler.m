@@ -44,6 +44,16 @@
     [pthctUserLibraryPath setURL:pathURL];
     [toggleWindow makeKeyAndOrderFront:toggleWindow];
 }
+-(IBAction)openSpeedSound:(id)sender {
+    [mainWindow close];
+    [speedSoundWindow makeKeyAndOrderFront:speedSoundWindow];
+}
+
+-(IBAction)openRoomMode:(id)sender {
+    [mainWindow close];
+    [roomModeWindow makeKeyAndOrderFront:roomModeWindow];
+}
+
 
 -(IBAction)closeDelay:(id)sender {
     [delayWindow close];
@@ -70,6 +80,14 @@
     [mainWindow makeKeyAndOrderFront:mainWindow];
 }
 -(IBAction)closetoggle:(id)sender {
+    [toggleWindow close];
+    [mainWindow makeKeyAndOrderFront:mainWindow];
+}
+-(IBAction)closeSpeedSound:(id)sender {
+    [cueWindow close];
+    [mainWindow makeKeyAndOrderFront:mainWindow];
+}
+-(IBAction)closeRoomMode:(id)sender {
     [toggleWindow close];
     [mainWindow makeKeyAndOrderFront:mainWindow];
 }

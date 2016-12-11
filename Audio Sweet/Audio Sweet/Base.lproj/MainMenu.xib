@@ -262,17 +262,6 @@
                             <action selector="openCue:" target="MI4-Rq-Mqv" id="ldg-si-R4l"/>
                         </connections>
                     </button>
-                    <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yx2-X9-wLa">
-                        <rect key="frame" x="187" y="154" width="173" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Plugin Toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hrj-k4-f8D">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="openToggle:" target="MI4-Rq-Mqv" id="clW-8e-5f8"/>
-                        </connections>
-                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wza-B7-Axt">
                         <rect key="frame" x="360" y="187" width="173" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -322,6 +311,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="openRoomMode:" target="MI4-Rq-Mqv" id="m1W-if-v4q"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7I-Ka-FvQ">
                         <rect key="frame" x="14" y="154" width="173" height="32"/>
@@ -330,6 +322,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="openSpeedSound:" target="MI4-Rq-Mqv" id="gbP-Fr-cSS"/>
+                        </connections>
                     </button>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMh-kc-q4o">
                         <rect key="frame" x="33" y="223" width="135" height="17"/>
@@ -358,6 +353,17 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1E-ZY-85M">
+                        <rect key="frame" x="187" y="154" width="173" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Plugin Toggles" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="72A-AG-UTh">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="openToggle:" target="MI4-Rq-Mqv" id="r7E-cS-F3H"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="-1451" y="102"/>
@@ -1436,7 +1442,7 @@ This same concept can be applied to double and triple dotted notes (Multiply by 
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="iav-Zx-y8o">
-                                    <rect key="frame" x="0.0" y="0.0" width="465" height="383"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="465" height="629"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <size key="minSize" width="465" height="266"/>
@@ -1679,6 +1685,8 @@ v1.0
                 <outlet property="freqWindow" destination="o8x-ES-gdi" id="tLa-Q8-h8S"/>
                 <outlet property="mainWindow" destination="371" id="Q8A-kG-mc5"/>
                 <outlet property="pthctUserLibraryPath" destination="VSO-Az-qPG" id="gIg-9F-hBt"/>
+                <outlet property="roomModeWindow" destination="Omo-aH-sQO" id="vOj-nR-cd0"/>
+                <outlet property="speedSoundWindow" destination="Uww-Ug-Ju9" id="1nK-OJ-b4Q"/>
                 <outlet property="systemScriptsWindow" destination="xDR-ck-Nfe" id="Eel-Gp-J2O"/>
                 <outlet property="tempoWindow" destination="8kZ-aq-mLI" id="H8Q-N5-oQY"/>
                 <outlet property="toggleWindow" destination="BhP-nF-5At" id="wDq-jI-in4"/>
@@ -2154,11 +2162,22 @@ v1.0
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-g7-Qro">
+                        <rect key="frame" x="379" y="19" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K5u-jb-T8R">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeSpeedSound:" target="MI4-Rq-Mqv" id="5Ju-Io-a4Z"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-515" y="629"/>
+            <point key="canvasLocation" x="-1531" y="445"/>
         </window>
-        <window title="Room Modes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="" animationBehavior="default" id="Omo-aH-sQO">
+        <window title="Room Modes" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Omo-aH-sQO">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="207" width="440" height="251"/>
@@ -2281,7 +2300,7 @@ v1.0
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pG6-ne-0C8">
-                        <rect key="frame" x="18" y="49" width="109" height="17"/>
+                        <rect key="frame" x="122" y="49" width="109" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Room Resonance" id="Rp4-xw-fF3">
                             <font key="font" metaFont="system"/>
@@ -2290,7 +2309,7 @@ v1.0
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPJ-JV-xRH">
-                        <rect key="frame" x="14" y="13" width="154" height="32"/>
+                        <rect key="frame" x="118" y="13" width="154" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Open Spreadsheet" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ntr-uH-ZQg">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2298,16 +2317,27 @@ v1.0
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNt-Yb-vD2">
-                        <rect key="frame" x="329" y="13" width="97" height="32"/>
+                        <rect key="frame" x="14" y="13" width="97" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Calculate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3ZS-vP-ZVN">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-CP-mzJ">
+                        <rect key="frame" x="345" y="19" width="75" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Main Menu" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mh9-0g-xCc">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeRoomMode:" target="MI4-Rq-Mqv" id="IkF-Xg-hMq"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="24" y="660.5"/>
+            <point key="canvasLocation" x="-1549" y="466"/>
         </window>
     </objects>
     <resources>

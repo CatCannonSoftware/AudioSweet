@@ -15,7 +15,7 @@
     purge.launchPath = @"/usr/sbin/purge";
     purge.arguments = @[@"sudo"];
     
-    [purge setArguments:args];
+   // [purge setArguments:args];
     
     [purge launch];
     NSAlert *alert = [[NSAlert alloc] init];
